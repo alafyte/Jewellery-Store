@@ -1,0 +1,49 @@
+nav {
+  background-color: black;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  display: inline-block;
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  font-size: x-large;
+  text-decoration: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header {
+  margin-top: 2%;
+}
+
+#logotype {
+  display: block;
+  margin: auto;
+  margin-bottom: 2%;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#EFEBEB), to(#EED1D1));
+  background: linear-gradient(to right, #EFEBEB, #EED1D1);
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,36 @@
+nav {
+    background-color: black;
+    ul {
+        li {
+            list-style-type: none;
+            display: inline-block;
+                a {
+                    display: inline-block;
+                    font-family: 'Cormorant Garamond', serif;
+                    color: white;
+                    font-size: x-large;
+                    text-decoration: none;
+            }
+        }
+    }
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+header {
+    margin-top: 2%;
+}
+#logotype {
+    display: block;
+    margin: auto;
+    margin-bottom: 2%;
+}
+body {
+    background: linear-gradient(to right, #EFEBEB, #EED1D1);
+}
