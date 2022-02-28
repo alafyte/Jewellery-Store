@@ -1,21 +1,98 @@
-nav {
+.navigation-first {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #efebeb;
+  z-index: 1;
+}
+
+.navigation-first ul {
+  margin-left: 2%;
+}
+
+.navigation-first ul li {
+  list-style-type: none;
+  display: inline-block;
+  width: 12%;
+}
+
+.navigation-first ul li a {
+  display: block;
+  height: 5px;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navigation-second {
   background-color: black;
 }
 
-nav ul li {
+.navigation-second ul li {
   list-style-type: none;
   display: inline-block;
 }
 
-nav ul li a {
+.navigation-second ul li a {
   display: inline-block;
-  font-family: 'Cormorant Garamond', serif;
   color: white;
   font-size: x-large;
   text-decoration: none;
 }
 
-.flex {
+header {
+  margin-top: 5%;
+}
+
+#search {
+  position: absolute;
+  top: 0;
+  right: 3%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#search-button {
+  position: absolute;
+  top: 3px;
+  right: 17.5%;
+  height: 30px;
+  width: 30px;
+  background-color: azure;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+.slider {
+  margin-bottom: 3%;
+}
+
+.flex-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.flex-second {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,10 +109,6 @@ nav ul li a {
       justify-content: space-around;
 }
 
-header {
-  margin-top: 2%;
-}
-
 #logotype {
   display: block;
   margin: auto;
@@ -43,8 +116,14 @@ header {
 }
 
 body {
-  background: -webkit-gradient(linear, left top, right top, from(#EFEBEB), to(#EED1D1));
-  background: linear-gradient(to right, #EFEBEB, #EED1D1);
+  background: -webkit-gradient(linear, left top, right top, from(#efebeb), to(#EED1D1));
+  background: linear-gradient(to right, #efebeb, #EED1D1);
+  font-family: "Cormorant Garamond", serif;
+}
+
+.about {
+  font-size: large;
+  font-weight: bolder;
 }
 
 button {
@@ -56,7 +135,7 @@ button {
   outline: none;
   background: rgba(239, 235, 235, 0.5);
   position: absolute;
-  top: 60%;
+  top: 73%;
   cursor: pointer;
   z-index: 1;
   -webkit-transition: 0.2s ease-in-out;

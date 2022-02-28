@@ -1,6 +1,32 @@
-$bgcolor: #EFEBEB;
+$bgcolor: #efebeb;
+$font: 'Cormorant Garamond', serif;
 
-nav {
+.navigation-first {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $bgcolor;
+    z-index: 1;
+    ul {
+        margin-left: 2%;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            width: 12%;
+                a {
+                    display: block;
+                    height: 5px;
+                    color: black;
+                    font-size: large;
+                    font-weight: bold;
+                    text-decoration: none; 
+            }
+        }
+    }
+}
+
+.navigation-second {
     background-color: black;
     ul {
         li {
@@ -8,7 +34,6 @@ nav {
             display: inline-block;
                 a {
                     display: inline-block;
-                    font-family: 'Cormorant Garamond', serif;
                     color: white;
                     font-size: x-large;
                     text-decoration: none;
@@ -17,7 +42,42 @@ nav {
     }
 }
 
-.flex {
+header {
+    margin-top: 5%;
+}
+#search {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#search-button {
+    position: absolute;
+    top: 3px;
+    right: 17.5%; 
+    height: 30px;
+    width: 30px;
+    background-color: azure;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+h3 {
+    text-align: center;
+}
+.slider {
+    margin-bottom: 3%;
+}
+.flex-first {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.flex-second {
     display: flex;
     flex-flow: row wrap;
     align-content: space-between;
@@ -25,9 +85,6 @@ nav {
     justify-content: space-around;
 }
 
-header {
-    margin-top: 2%;
-}
 #logotype {
     display: block;
     margin: auto;
@@ -35,8 +92,12 @@ header {
 }
 body {
     background: linear-gradient(to right, $bgcolor, #EED1D1);
+    font-family: $font;
 }
- 
+.about {
+    font-size: large;
+    font-weight: bolder;
+}
 button {
     border-radius: 100%;
     border: none;
@@ -46,7 +107,7 @@ button {
     outline: none;
     background: rgba($color: $bgcolor, $alpha: 0.5);
     position: absolute;
-    top: 60%;
+    top: 73%;
     cursor: pointer;
     z-index: 1;
     transition: 0.2s ease-in-out;
