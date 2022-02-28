@@ -46,4 +46,37 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#EFEBEB), to(#EED1D1));
   background: linear-gradient(to right, #EFEBEB, #EED1D1);
 }
+
+button {
+  border-radius: 100%;
+  border: none;
+  height: 60px;
+  padding-right: 33px;
+  width: 60px;
+  outline: none;
+  background: rgba(239, 235, 235, 0.5);
+  position: absolute;
+  top: 60%;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #7c7c7c6b;
+}
+
+#slider {
+  display: block;
+  margin: auto;
+}
+
+#prev {
+  left: 70px;
+}
+
+#next {
+  right: 70px;
+}
 /*# sourceMappingURL=home.css.map */

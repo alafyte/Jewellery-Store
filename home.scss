@@ -1,3 +1,5 @@
+$bgcolor: #EFEBEB;
+
 nav {
     background-color: black;
     ul {
@@ -32,5 +34,34 @@ header {
     margin-bottom: 2%;
 }
 body {
-    background: linear-gradient(to right, #EFEBEB, #EED1D1);
+    background: linear-gradient(to right, $bgcolor, #EED1D1);
+}
+ 
+button {
+    border-radius: 100%;
+    border: none;
+    height: 60px;
+    padding-right: 33px;
+    width: 60px;
+    outline: none;
+    background: rgba($color: $bgcolor, $alpha: 0.5);
+    position: absolute;
+    top: 60%;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.2s ease-in-out;
+    &:hover {
+    background: #7c7c7c6b;
+    }
+}
+
+#slider {
+    display: block;
+    margin: auto;
+}
+#prev {
+    left: 70px;
+}
+#next {
+    right: 70px;
 }
