@@ -46,39 +46,6 @@ header {
   margin-top: 5%;
 }
 
-#search {
-  width: 300px;
-  float: right;
-}
-
-.search {
-  position: absolute;
-  top: 0;
-  right: 3%;
-  width: 220px;
-  font-family: "Forum", cursive;
-}
-
-.search-button {
-  position: absolute;
-  top: 3px;
-  height: 30px;
-  width: 30px;
-  background-color: azure;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
-h3 {
-  text-align: center;
-}
-
-.slider {
-  margin-bottom: 3%;
-}
-
 .flex-first {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,6 +81,37 @@ h3 {
       justify-content: space-around;
 }
 
+#search {
+  width: 300px;
+  float: right;
+}
+
+.search {
+  position: absolute;
+  top: 0;
+  right: 3%;
+  width: 220px;
+  font-family: "Forum", cursive;
+}
+
+.search-button {
+  position: absolute;
+  top: 3px;
+  height: 30px;
+  width: 30px;
+  background-color: azure;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.search-button:hover {
+  background: #7c7c7c6b;
+}
+
 #logotype {
   display: block;
   margin: auto;
@@ -128,44 +126,6 @@ body {
 
 header, footer, .navigation-first {
   font-family: "Cormorant Garamond", serif;
-}
-
-.about {
-  font-size: large;
-  font-weight: bolder;
-}
-
-button {
-  border-radius: 100%;
-  border: none;
-  height: 60px;
-  padding-right: 33px;
-  width: 60px;
-  outline: none;
-  background: rgba(239, 235, 235, 0.5);
-  position: absolute;
-  top: 73%;
-  cursor: pointer;
-  z-index: 1;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-button:hover {
-  background: #7c7c7c6b;
-}
-
-#slider {
-  display: block;
-  margin: auto;
-}
-
-#prev {
-  left: 70px;
-}
-
-#next {
-  right: 70px;
 }
 
 footer {
@@ -186,4 +146,4 @@ footer {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
 }
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=Template.css.map */

@@ -3,7 +3,6 @@ $footer-color: #F5CDCD;
 $font: 'Cormorant Garamond', serif;
 $font-main: 'Forum', cursive;
 
-
 .navigation-first {
     position: fixed;
     top: 0;
@@ -48,6 +47,22 @@ $font-main: 'Forum', cursive;
 header {
     margin-top: 5%;
 }
+.flex-first {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.flex-second {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
 #search {
     width: 300px;
     float: right;
@@ -69,29 +84,11 @@ header {
     border: none;
     cursor: pointer;
     padding: 0;
+    transition: 0.2s ease-in-out;
+    &:hover {
+    background: #7c7c7c6b;
+    }
 }
-h3 {
-    text-align: center;
-}
-.slider {
-    margin-bottom: 3%;
-}
-.flex-first {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: space-between;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.flex-second {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: space-between;
-    align-items: flex-start;
-    justify-content: space-around;
-}
-
 #logotype {
     display: block;
     margin: auto;
@@ -103,38 +100,6 @@ body {
 }
 header, footer, .navigation-first {
     font-family: $font;
-}
-.about {
-    font-size: large;
-    font-weight: bolder;
-}
-button {
-    border-radius: 100%;
-    border: none;
-    height: 60px;
-    padding-right: 33px;
-    width: 60px;
-    outline: none;
-    background: rgba($color: $bgcolor, $alpha: 0.5);
-    position: absolute;
-    top: 73%;
-    cursor: pointer;
-    z-index: 1;
-    transition: 0.2s ease-in-out;
-    &:hover {
-    background: #7c7c7c6b;
-    }
-}
-
-#slider {
-    display: block;
-    margin: auto;
-}
-#prev {
-    left: 70px;
-}
-#next {
-    right: 70px;
 }
 
 footer {

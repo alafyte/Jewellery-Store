@@ -11,8 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Cormorant+Garamond:wght@300&family=Forum&family=Merriweather:wght@300&family=Mulish:wght@200&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="style/home.css">
-    <script src="scripts/home.js"></script>
+    <link rel="stylesheet" href="style/Template.css">
 </head>
 <body>
     <!--Первое меню-->
@@ -26,8 +25,7 @@
             </ul>
             <!--Поиск по сайту-->
             <div id="search">
-            <button class="search-button"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></button><input class="search" type="search" placeholder="Поиск по сайту" autocomplete="off">
-            </div>
+            <button class="search-button"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></button><input class="search" type="search" placeholder="Поиск по сайту" autocomplete="off"></div>
         </nav>
 
     <header>
@@ -49,86 +47,57 @@
     </nav> 
 </header>
 
-
-<main>
-    <section class="slider">
-        <button id="prev" onclick="prev();">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="170 0 712 470" height="5em" width="4em" xmlns="http://www.w3.org/2000/svg"><path d="M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z"></path>
-            </svg>
-        </button>
-
-        <a id="slider-source" href="Page-1.html"><img id="slider" src="files/jv_NEW-site-1440x520.jpg"/></a>
-      
-        <button id="next" onclick="next();">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="170 0 712 470" height="5em" width="4em" xmlns="http://www.w3.org/2000/svg"><path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path>
-            </svg>
-        </button>
-    </section>
-
-    <section class="container about">
-        <h3>ИСТОРИЯ СОЗДАНИЯ</h3>
-        <p class="twelve columns">«AURA» — сеть ювелирных магазинов, которую знают и любят в Беларуси. Мы продаем актуальные коллекции украшений от известных брендов по самым выгодным ценам в стране. Сейчас под брендом «AURA» работает более 50 магазинов в 37 городах. Скоро мы откроем магазин в вашем городе.</p>
-
-        <h3>УНИКАЛЬНО ПОДОБРАННЫЕ УКРАШЕНИЯ </h3>
-        <p class="twelve columns">В наших салонах представлены эксклюзивные украшения из золота, серебра, с драгоценными и полудрагоценными камнями, а также премиум-украшения с бриллиантами от известных ювелирных брендов.</p>
-
-        <h3>ЛУЧШИЕ ЛЮДИ</h3>
-        <p class="twelve columns">В нашей команде работают энергичные, открытые люди, которые всегда готовы прийти на помощь, с удовольствием делятся информацией и внимательны к потребностям каждого покупателя. Благодаря нашим профессионалам в магазинах сети поддерживается атмосфера, в которой выбирать украшения приятно и легко.
-        Создавая сеть ювелирных магазинов «AURA», мы стремились объединить разных людей в их естественном желании украсить свою жизнь драгоценными моментами прикосновения к прекрасному.</p>
-    </section>
-</main>
-
 <footer>
-<div class="container">
-<nav class="navigation-footer three columns" style="float: left;">
-    <h4>Каталог</h4>
-    <ul>
-        <li><a href="">Кольца</a></li>
-        <li><a href="">Серьги</a></li>
-        <li><a href="">Браслеты</a></li>
-        <li><a href="">Цепи</a></li>
-        <li><a href="">Колье</a></li>
-        <li><a href="">Подвески</a></li>
-        <li><a href="">Часы</a></li>
-    </ul>
-</nav>
-
-<nav class="navigation-footer three columns">
-    <h4>Покупателям</h4>
-    <ul>
-        <li><a href="">Главная</a></li>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Контакты</a></li>
-        <li><a href="">Акции</a></li>
-        <li><a href="">Сертификаты</a></li>
-    </ul>
-</nav>
-
-<nav class="navigation-footer three columns">
-    <h4>Магазины</h4>
-    <ul>
-      <li>ТЦ «Галерея», 3-й этаж</li>
-      <li>ТЦ «Скала», 1-й этаж</li>
-      <li>ТЦ «Dana Mall», 1-й этаж</li>
-      <li>Пр-т Победителей, 65</li>
-    </ul>
-</nav>
-
-<nav class="navigation-footer three columns">
-    <h4>Контакты</h4>
-    <ul>
-        <li>Пн-Вс с 11:00 до 21:00</li>
-        <li>
-            <span>Электронная почта</span>
-            <a href="mailto:aura-jewellery@gmail.com">aura-jewellery@gmail.com</a>
-        </li>
-        <li>
-            <span>Телефон</span>
-            <a href="tel:80296705505">8 (029) 670-55-05</a>
-        </li>
-      </ul>
-</nav>
-</div>
-</footer>
+    <div class="container">
+    <nav class="navigation-footer three columns" style="float: left;">
+        <h4>Каталог</h4>
+        <ul>
+            <li><a href="">Кольца</a></li>
+            <li><a href="">Серьги</a></li>
+            <li><a href="">Браслеты</a></li>
+            <li><a href="">Цепи</a></li>
+            <li><a href="">Колье</a></li>
+            <li><a href="">Подвески</a></li>
+            <li><a href="">Часы</a></li>
+        </ul>
+    </nav>
+    
+    <nav class="navigation-footer three columns">
+        <h4>Покупателям</h4>
+        <ul>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Контакты</a></li>
+            <li><a href="">Акции</a></li>
+            <li><a href="">Сертификаты</a></li>
+        </ul>
+    </nav>
+    
+    <nav class="navigation-footer three columns">
+        <h4>Магазины</h4>
+        <ul>
+          <li>ТЦ «Галерея», 3-й этаж</li>
+          <li>ТЦ «Скала», 1-й этаж</li>
+          <li>ТЦ «Dana Mall», 1-й этаж</li>
+          <li>Пр-т Победителей, 65</li>
+        </ul>
+    </nav>
+    
+    <nav class="navigation-footer three columns">
+        <h4>Контакты</h4>
+        <ul>
+            <li>Пн-Вс с 11:00 до 21:00</li>
+            <li>
+                <span>Электронная почта</span>
+                <a href="mailto:aura-jewellery@gmail.com">aura-jewellery@gmail.com</a>
+            </li>
+            <li>
+                <span>Телефон</span>
+                <a href="tel:80296705505">8 (029) 670-55-05</a>
+            </li>
+          </ul>
+    </nav>
+    </div>
+    </footer>
 </body>
 </html>
