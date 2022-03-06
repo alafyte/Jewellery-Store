@@ -14,7 +14,7 @@ function prev() {
     var slider = document.getElementById('slider');
     var sliderSource = document.getElementById('slider-source');
     num--;
-    if(num < 0) {
+    if (num < 0) {
         num = images.length - 1;
     }
     slider.src = images[num];
@@ -25,7 +25,7 @@ function next() {
     var slider = document.getElementById('slider');
     var sliderSource = document.getElementById('slider-source');
     num++;
-    if(num >= images.length) {
+    if (num >= images.length) {
         num = 0;
     }
     slider.src = images[num];

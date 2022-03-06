@@ -106,8 +106,10 @@ h3 {
 .slider {
     position: relative;
     margin-bottom: 3%;
-    img {
+    #slider {
         max-width: 100%;
+        transition: opacity 1s ease-in;
+        opacity: 1;
     }
     button {
         border-radius: 100%;

@@ -115,8 +115,11 @@ h3 {
   margin-bottom: 3%;
 }
 
-.slider img {
+.slider #slider {
   max-width: 100%;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+  opacity: 1;
 }
 
 .slider button {
