@@ -1,7 +1,7 @@
 $bgcolor: #efebeb;
 $footer-color: #F5CDCD;
-$font: 'Cormorant Garamond', serif;
-$font-main: 'Forum', cursive;
+$font: 'Cormorant Garamond', 'Merriweather', 'Mulish', serif;
+$font-main: 'Forum', 'Alegreya Sans', cursive;
 
 
 .navigation-first {
@@ -10,7 +10,7 @@ $font-main: 'Forum', cursive;
     left: 0;
     width: 100%;
     background-color: $bgcolor;
-    z-index: 1;
+    z-index: 2;
     ul {
         margin-left: 2%;
         li {
@@ -59,6 +59,32 @@ header {
     width: 220px;
     font-family: $font-main;
 }
+.products {
+    margin-bottom: 2%;
+        a {
+            text-decoration: none;
+            color: currentColor;
+            font-size: calc(12px + (12 + 12 * 0.7) * ((100vw - 320px) / 1199));
+        }
+        img {
+            will-change: transform;
+            transition: transform 3s ease-out;
+            max-width: 115%;
+            max-height: 240px;
+            width: auto;
+            height: auto;
+        }
+        div {
+            span {
+                position: relative;
+                z-index: 1;
+                top: 50px;
+                left: 23px;
+            }
+        }
+    
+}
+
 .search-button {
     position: absolute;
     top: 3px; 
@@ -69,12 +95,37 @@ header {
     border: none;
     cursor: pointer;
     padding: 0;
+    transition: 0.2s ease-in-out;
+    &:hover {
+    background: #7c7c7c6b;
+    }
 }
 h3 {
     text-align: center;
 }
 .slider {
+    position: relative;
     margin-bottom: 3%;
+    img {
+        max-width: 100%;
+    }
+    button {
+        border-radius: 100%;
+        border: none;
+        height: 60px;
+        padding-right: 33px;
+        width: 60px;
+        outline: none;
+        background: rgba($color: $bgcolor, $alpha: 0.5);
+        position: absolute;
+        top: 40%;
+        cursor: pointer;
+        z-index: 1;
+        transition: 0.2s ease-in-out;
+        &:hover {
+        background: #7c7c7c6b;
+        }
+    }
 }
 .flex-first {
     display: flex;
@@ -107,23 +158,6 @@ header, footer, .navigation-first {
 .about {
     font-size: large;
     font-weight: bolder;
-}
-button {
-    border-radius: 100%;
-    border: none;
-    height: 60px;
-    padding-right: 33px;
-    width: 60px;
-    outline: none;
-    background: rgba($color: $bgcolor, $alpha: 0.5);
-    position: absolute;
-    top: 73%;
-    cursor: pointer;
-    z-index: 1;
-    transition: 0.2s ease-in-out;
-    &:hover {
-    background: #7c7c7c6b;
-    }
 }
 
 #slider {

@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   background-color: #efebeb;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navigation-first ul {
@@ -56,7 +56,36 @@ header {
   top: 0;
   right: 3%;
   width: 220px;
-  font-family: "Forum", cursive;
+  font-family: "Forum", "Alegreya Sans", cursive;
+}
+
+.products {
+  margin-bottom: 2%;
+}
+
+.products a {
+  text-decoration: none;
+  color: currentColor;
+  font-size: calc(12px + (12 + 12 * 0.7) * ((100vw - 320px) / 1199));
+}
+
+.products img {
+  will-change: transform;
+  -webkit-transition: -webkit-transform 3s ease-out;
+  transition: -webkit-transform 3s ease-out;
+  transition: transform 3s ease-out;
+  transition: transform 3s ease-out, -webkit-transform 3s ease-out;
+  max-width: 115%;
+  max-height: 240px;
+  width: auto;
+  height: auto;
+}
+
+.products div span {
+  position: relative;
+  z-index: 1;
+  top: 50px;
+  left: 23px;
 }
 
 .search-button {
@@ -69,6 +98,12 @@ header {
   border: none;
   cursor: pointer;
   padding: 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.search-button:hover {
+  background: #7c7c7c6b;
 }
 
 h3 {
@@ -76,7 +111,32 @@ h3 {
 }
 
 .slider {
+  position: relative;
   margin-bottom: 3%;
+}
+
+.slider img {
+  max-width: 100%;
+}
+
+.slider button {
+  border-radius: 100%;
+  border: none;
+  height: 60px;
+  padding-right: 33px;
+  width: 60px;
+  outline: none;
+  background: rgba(239, 235, 235, 0.5);
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.slider button:hover {
+  background: #7c7c7c6b;
 }
 
 .flex-first {
@@ -123,36 +183,16 @@ h3 {
 body {
   background: -webkit-gradient(linear, left top, right top, from(#efebeb), to(#EED1D1));
   background: linear-gradient(to right, #efebeb, #EED1D1);
-  font-family: "Forum", cursive;
+  font-family: "Forum", "Alegreya Sans", cursive;
 }
 
 header, footer, .navigation-first {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Merriweather", "Mulish", serif;
 }
 
 .about {
   font-size: large;
   font-weight: bolder;
-}
-
-button {
-  border-radius: 100%;
-  border: none;
-  height: 60px;
-  padding-right: 33px;
-  width: 60px;
-  outline: none;
-  background: rgba(239, 235, 235, 0.5);
-  position: absolute;
-  top: 73%;
-  cursor: pointer;
-  z-index: 1;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-button:hover {
-  background: #7c7c7c6b;
 }
 
 #slider {
@@ -172,7 +212,7 @@ footer {
   border-top: 1px solid rgba(128, 128, 128, 0.5);
   padding-top: 2%;
   background-color: rgba(245, 205, 205, 0.5);
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Merriweather", "Mulish", serif;
 }
 
 .navigation-footer ul {

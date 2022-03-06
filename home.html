@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="style/home.css">
-    <script src="scripts/home.js"></script>
+     <script src="scripts/home.js"></script>
 </head>
 <body>
     <!--Первое меню-->
@@ -44,7 +44,6 @@
             <li><a href="">Цепи</a></li>
             <li><a href="">Колье</a></li>
             <li><a href="">Подвески</a></li>
-            <li><a href="">Часы</a></li>
         </ul>
     </nav> 
 </header>
@@ -52,17 +51,31 @@
 
 <main>
     <section class="slider">
-        <button id="prev" onclick="prev();">
+        <button id="prev" onclick="prev();" type="button">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="170 0 712 470" height="5em" width="4em" xmlns="http://www.w3.org/2000/svg"><path d="M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z"></path>
             </svg>
         </button>
 
         <a id="slider-source" href="Page-1.html"><img id="slider" src="files/jv_NEW-site-1440x520.jpg"/></a>
       
-        <button id="next" onclick="next();">
+        <button id="next" onclick="next();" type="button">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="170 0 712 470" height="5em" width="4em" xmlns="http://www.w3.org/2000/svg"><path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path>
             </svg>
         </button>
+    </section>
+
+    <section class="container products">
+    <div class="row">
+        <div class="four columns"><a href=""><span>Кольца</span><img src="files/menu_rings_360x240-360x240.jpg" alt="Кольца"></a></div>
+        <div class="four columns"><a href=""><span>Серьги</span><img src="files/menu_earrings_360x240-360x240.jpg" alt="Серьги"></a></div>
+        <div class="four columns"><a href=""><span>Браслеты</span><img src="files/menu_braclets_360x240-360x240.jpg" alt="Браслеты"></a></div>
+    </div>
+
+    <div class="row">
+        <div class="four columns"><a href=""><span>Цепи</span><img src="files/menu_cepi__360x240-360x240.jpg" alt="Цепи"></a></div>
+        <div class="four columns"><a href=""><span>Колье</span><img src="files/menu_kole_360x240-360x240.jpg" alt="Колье"></a></div>
+        <div class="four columns"><a href=""><span>Подвески</span><img src="files/menu_podveska_360x240-360x240.jpg" alt="Подвески"></a></div>
+    </div>
     </section>
 
     <section class="container about">
@@ -89,7 +102,6 @@
         <li><a href="">Цепи</a></li>
         <li><a href="">Колье</a></li>
         <li><a href="">Подвески</a></li>
-        <li><a href="">Часы</a></li>
     </ul>
 </nav>
 
