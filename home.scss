@@ -1,6 +1,6 @@
 $bgcolor: #efebeb;
 $footer-color: #F5CDCD;
-$font: 'Cormorant Garamond', 'Merriweather', 'Mulish', serif;
+$font: 'Poiret One', 'Merriweather', 'Mulish', cursive;
 $font-main: 'Forum', 'Alegreya Sans', cursive;
 
 
@@ -24,6 +24,7 @@ $font-main: 'Forum', 'Alegreya Sans', cursive;
                     font-size: large;
                     font-weight: bold;
                     text-decoration: none; 
+
             }
         }
     }
@@ -35,11 +36,27 @@ $font-main: 'Forum', 'Alegreya Sans', cursive;
         li {
             list-style-type: none;
             display: inline-block;
+            height: 40px;
+            
                 a {
+                    vertical-align: middle;
                     display: inline-block;
                     color: white;
                     font-size: x-large;
                     text-decoration: none;
+                     &::after {
+                        content: ""; 
+                        height: 1px;
+                        width: 0%;
+                        background-color: #efebeb;
+                        text-decoration: underline;
+                        transition: width 0.4s ease-in-out;
+                    }
+                    &:hover::after, &:focus::after {
+                        display: block;
+                        width: 100%;
+                        color: #EED1D1;
+                    }
             }
         }
     }
@@ -73,6 +90,9 @@ header {
             max-height: 240px;
             width: auto;
             height: auto;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
         div {
             span {

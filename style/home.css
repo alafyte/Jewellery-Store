@@ -33,13 +33,31 @@
 .navigation-second ul li {
   list-style-type: none;
   display: inline-block;
+  height: 40px;
 }
 
 .navigation-second ul li a {
+  vertical-align: middle;
   display: inline-block;
   color: white;
   font-size: x-large;
   text-decoration: none;
+}
+
+.navigation-second ul li a::after {
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: #efebeb;
+  text-decoration: underline;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.navigation-second ul li a:hover::after, .navigation-second ul li a:focus::after {
+  display: block;
+  width: 100%;
+  color: #EED1D1;
 }
 
 header {
@@ -79,6 +97,11 @@ header {
   max-height: 240px;
   width: auto;
   height: auto;
+}
+
+.products img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .products div span {
@@ -190,7 +213,7 @@ body {
 }
 
 header, footer, .navigation-first {
-  font-family: "Cormorant Garamond", "Merriweather", "Mulish", serif;
+  font-family: "Poiret One", "Merriweather", "Mulish", cursive;
 }
 
 .about {
@@ -215,7 +238,7 @@ footer {
   border-top: 1px solid rgba(128, 128, 128, 0.5);
   padding-top: 2%;
   background-color: rgba(245, 205, 205, 0.5);
-  font-family: "Cormorant Garamond", "Merriweather", "Mulish", serif;
+  font-family: "Poiret One", "Merriweather", "Mulish", cursive;
 }
 
 .navigation-footer ul {
