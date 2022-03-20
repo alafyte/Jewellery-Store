@@ -88,12 +88,11 @@ header {
 }
 
 .products img {
-  will-change: transform;
   -webkit-transition: -webkit-transform 3s ease-out;
   transition: -webkit-transform 3s ease-out;
   transition: transform 3s ease-out;
   transition: transform 3s ease-out, -webkit-transform 3s ease-out;
-  max-width: 115%;
+  max-width: 105%;
   max-height: 240px;
   width: auto;
   height: auto;

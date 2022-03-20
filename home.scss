@@ -84,9 +84,8 @@ header {
             font-size: calc(12px + (12 + 12 * 0.7) * ((100vw - 320px) / 1199));
         }
         img {
-            will-change: transform;
             transition: transform 3s ease-out;
-            max-width: 115%;
+            max-width: 105%;
             max-height: 240px;
             width: auto;
             height: auto;
