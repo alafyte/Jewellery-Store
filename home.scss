@@ -1,12 +1,12 @@
 $bgcolor: #efebeb;
 $footer-color: #F5CDCD;
-$font: 'Poiret One', 'Merriweather', 'Mulish', cursive;
-$font-main: 'Forum', 'Alegreya Sans', cursive;
+$font: 'Poiret One', 'Merriweather', 'Mulish', 'Segoe UI', 'Times New Roman', cursive;
+$font-main: 'Forum', 'Alegreya Sans', 'Segoe UI', 'Times New Roman', cursive;
 
 
 .navigation-first {
     position: fixed;
-    top: 0;
+    top: 0; 
     left: 0;
     width: 100%;
     background-color: $bgcolor;
@@ -24,11 +24,19 @@ $font-main: 'Forum', 'Alegreya Sans', cursive;
                     font-size: large;
                     font-weight: bold;
                     text-decoration: none; 
+                    transition: text-decoration 0.4s ease-in-out;
+                }
+
+                    &:hover, &:focus {
+                        display: block;
+                        text-decoration: underline;
+                        color: #EED1D1;
+                    }
+                
 
             }
         }
     }
-}
 
 .navigation-second {
     background-color: black;
@@ -177,7 +185,7 @@ header, footer, .navigation-first {
     font-family: $font;
 }
 .about {
-    font-size: large;
+    font-size: 14pt;
     font-weight: bolder;
 }
 

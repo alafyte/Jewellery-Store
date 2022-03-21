@@ -24,6 +24,16 @@
   font-size: large;
   font-weight: bold;
   text-decoration: none;
+  -webkit-transition: -webkit-text-decoration 0.4s ease-in-out;
+  transition: -webkit-text-decoration 0.4s ease-in-out;
+  transition: text-decoration 0.4s ease-in-out;
+  transition: text-decoration 0.4s ease-in-out, -webkit-text-decoration 0.4s ease-in-out;
+}
+
+.navigation-first ul li:hover, .navigation-first ul li:focus {
+  display: block;
+  text-decoration: underline;
+  color: #EED1D1;
 }
 
 .navigation-second {
@@ -74,7 +84,7 @@ header {
   top: 0;
   right: 3%;
   width: 220px;
-  font-family: "Forum", "Alegreya Sans", cursive;
+  font-family: "Forum", "Alegreya Sans", "Segoe UI", "Times New Roman", cursive;
 }
 
 .products {
@@ -208,15 +218,15 @@ h3 {
 body {
   background: -webkit-gradient(linear, left top, right top, from(#efebeb), to(#EED1D1));
   background: linear-gradient(to right, #efebeb, #EED1D1);
-  font-family: "Forum", "Alegreya Sans", cursive;
+  font-family: "Forum", "Alegreya Sans", "Segoe UI", "Times New Roman", cursive;
 }
 
 header, footer, .navigation-first {
-  font-family: "Poiret One", "Merriweather", "Mulish", cursive;
+  font-family: "Poiret One", "Merriweather", "Mulish", "Segoe UI", "Times New Roman", cursive;
 }
 
 .about {
-  font-size: large;
+  font-size: 14pt;
   font-weight: bolder;
 }
 
@@ -237,7 +247,7 @@ footer {
   border-top: 1px solid rgba(128, 128, 128, 0.5);
   padding-top: 2%;
   background-color: rgba(245, 205, 205, 0.5);
-  font-family: "Poiret One", "Merriweather", "Mulish", cursive;
+  font-family: "Poiret One", "Merriweather", "Mulish", "Segoe UI", "Times New Roman", cursive;
 }
 
 .navigation-footer ul {
