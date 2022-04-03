@@ -405,6 +405,7 @@ footer {
   padding-top: 2%;
   background-color: rgba(245, 205, 205, 0.5);
   font-family: "Poiret One", "Merriweather", "Mulish", "Segoe UI", "Times New Roman", cursive;
+  width: 100%;
 }
 
 @media (max-width: 999px) {
