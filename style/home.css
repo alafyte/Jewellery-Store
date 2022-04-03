@@ -88,6 +88,107 @@
   color: #EED1D1;
 }
 
+@media (min-width: 1000px) {
+  .navigation-mobile, .hamb, #side-menu {
+    display: none;
+  }
+}
+
+#side-menu {
+  display: none;
+}
+
+.navigation-mobile {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: #efebeb;
+  overflow: hidden;
+}
+
+.navigation-mobile ul {
+  list-style-type: none;
+}
+
+.menu a {
+  display: block;
+  padding: 2%;
+  color: black;
+  text-decoration: none;
+  font-size: large;
+}
+
+.menu a:hover {
+  background-color: gray;
+}
+
+.navigation-mobile {
+  max-height: 0;
+  -webkit-transition: max-height .5s ease-out;
+  transition: max-height .5s ease-out;
+  z-index: 3;
+}
+
+.hamb {
+  cursor: pointer;
+  float: left;
+  top: 0;
+  position: absolute;
+  padding: 40px 20px;
+}
+
+.hamb-line {
+  background: gray;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+
+.hamb-line::after, .hamb-line::before {
+  background: gray;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.hamb-line::after {
+  top: -5px;
+}
+
+.hamb-line::before {
+  top: 5px;
+}
+
+.side-menu {
+  position: absolute;
+  top: 0;
+}
+
+.side-menu:checked ~ nav {
+  max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
 header {
   margin-top: 5%;
 }
