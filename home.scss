@@ -11,7 +11,7 @@ $font-main: 'Forum', 'Alegreya Sans', 'Segoe UI', 'Times New Roman', cursive;
     width: 100%;
     background-color: $bgcolor;
     z-index: 2;
-    @media (min-width: 560px) and (max-width: 1000px) {
+    @media (max-width: 999px) {
         display: none;
     }
     ul {
@@ -28,7 +28,7 @@ $font-main: 'Forum', 'Alegreya Sans', 'Segoe UI', 'Times New Roman', cursive;
                     font-weight: bold;
                     text-decoration: none; 
                     transition: text-decoration 0.4s ease-in-out;
-                    @media (min-width: 560px) and (max-width: 1000px) {
+                    @media (max-width: 999px) {
                         font-size: 9pt;
                     }
                 }
@@ -46,7 +46,7 @@ $font-main: 'Forum', 'Alegreya Sans', 'Segoe UI', 'Times New Roman', cursive;
 
 .navigation-second {
     background-color: black;
-    @media (min-width: 560px) and (max-width: 1000px) {
+    @media (max-width: 999px) {
         display: none;
     }
     ul {
@@ -81,14 +81,14 @@ $font-main: 'Forum', 'Alegreya Sans', 'Segoe UI', 'Times New Roman', cursive;
 
 header {
     margin-top: 5%;
-    @media (min-width: 560px) and (max-width: 1000px) {
+    @media (max-width: 999px) {
        margin-top: 2%;
     }
 }
 #search {
     width: 300px;
     float: right;
-    @media (min-width: 560px) and (max-width: 1000px) {
+    @media (max-width: 999px) {
         display: none;
     }
 }
@@ -98,7 +98,7 @@ header {
     right: 3%;
     width: 220px;
     font-family: $font-main; 
-    @media (min-width: 560px) and (max-width: 1000px) {
+    @media (max-width: 999px) {
         display: none;
     }
 }
@@ -111,6 +111,9 @@ header {
         input[name="switch"] {
             display: none;
         }
+        @media (max-width: 999px) {
+            width: 767px;
+        }
   }
 
   .switch {
@@ -118,7 +121,7 @@ header {
     left: 0;
     bottom: -40px;
     text-align: center;
-    width: 100%;
+    width: calc(100vw);
     label {
         display: inline-block;
         width: 8px;
@@ -161,39 +164,67 @@ header {
   .slider-inner {
     overflow: hidden;
   }
-  .slides {
-    width: 500%;
+  .slides1 {
+    @media (max-width: 999px) {
+        display: none;
+    }
+    width: calc(5 * 100vw);
     transition: all 0.5s;
     img {
-        width: 1440px;
-        height: 520px;
+        width: calc(100vw);
+        float: left;
+      }
+  }
+  .slides2 {
+    @media (min-width: 1000px) {
+        display: none;
+    }
+    width: calc(5 * 100vw);
+    transition: all 0.5s;
+    img {
+        width: calc(100vw);
         float: left;
       }
   }
 
   #btn1:checked~.slider-inner {
-    .slides {
+    .slides1 {
+    transform: translate(0);
+  }
+  .slides2 {
     transform: translate(0);
   }
 }
 #btn2:checked~.slider-inner {
-    .slides {
-    transform: translate(-1440px);
+    .slides1 {
+    transform: translate(calc(-100vw));
+  }
+  .slides2 {
+    transform: translate(calc(-100vw));
   }
 }
 #btn3:checked~.slider-inner {
-    .slides {
-    transform: translate(-2880px);
+    .slides1 {
+    transform: translate(calc(-2 * 100vw));
+  }
+  .slides2 {
+    transform: translate(calc(-2 * 100vw));
   }
 }
 #btn4:checked~.slider-inner {
-    .slides {
-    transform: translate(-4320px);
+    .slides1{
+    transform: translate(calc(-3 * 100vw));
+  }
+  .slides2 {
+    transform: translate(calc(-3 * 100vw));
   }
 }
 #btn5:checked~.slider-inner {
-    .slides {
-    transform: translate(-5760px);
+    .slides1 {
+    transform: translate(calc(-4 * 100vw));
+  }
+  .slides2 {
+    transform: translate(calc(-4 * 100vw));
   }
 }
 
@@ -266,9 +297,9 @@ h3 {
     margin-bottom: 2%;
     width: 590px;
     height: 107px;
-    @media (min-width: 560px) and (max-width: 1000px) {
-        width: 550px;
-        height: 67px;
+    @media (max-width: 999px) {
+        width: 560px;
+        height: 77px;
     }
 }
 body {

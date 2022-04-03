@@ -7,7 +7,7 @@
   z-index: 2;
 }
 
-@media (min-width: 560px) and (max-width: 1000px) {
+@media (max-width: 999px) {
   .navigation-first {
     display: none;
   }
@@ -36,7 +36,7 @@
   transition: text-decoration 0.4s ease-in-out, -webkit-text-decoration 0.4s ease-in-out;
 }
 
-@media (min-width: 560px) and (max-width: 1000px) {
+@media (max-width: 999px) {
   .navigation-first ul li a {
     font-size: 9pt;
   }
@@ -52,7 +52,7 @@
   background-color: black;
 }
 
-@media (min-width: 560px) and (max-width: 1000px) {
+@media (max-width: 999px) {
   .navigation-second {
     display: none;
   }
@@ -92,7 +92,7 @@ header {
   margin-top: 5%;
 }
 
-@media (min-width: 560px) and (max-width: 1000px) {
+@media (max-width: 999px) {
   header {
     margin-top: 2%;
   }
@@ -103,7 +103,7 @@ header {
   float: right;
 }
 
-@media (min-width: 560px) and (max-width: 1000px) {
+@media (max-width: 999px) {
   #search {
     display: none;
   }
@@ -117,7 +117,7 @@ header {
   font-family: "Forum", "Alegreya Sans", "Segoe UI", "Times New Roman", cursive;
 }
 
-@media (min-width: 560px) and (max-width: 1000px) {
+@media (max-width: 999px) {
   .search {
     display: none;
   }
@@ -135,12 +135,18 @@ header {
   display: none;
 }
 
+@media (max-width: 999px) {
+  .slider {
+    width: 767px;
+  }
+}
+
 .switch {
   position: absolute;
   left: 0;
   bottom: -40px;
   text-align: center;
-  width: 100%;
+  width: calc(100vw);
 }
 
 .switch label {
@@ -180,41 +186,88 @@ header {
   overflow: hidden;
 }
 
-.slides {
-  width: 500%;
+.slides1 {
+  width: calc(5 * 100vw);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.slides img {
-  width: 1440px;
-  height: 520px;
+@media (max-width: 999px) {
+  .slides1 {
+    display: none;
+  }
+}
+
+.slides1 img {
+  width: calc(100vw);
   float: left;
 }
 
-#btn1:checked ~ .slider-inner .slides {
+.slides2 {
+  width: calc(5 * 100vw);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media (min-width: 1000px) {
+  .slides2 {
+    display: none;
+  }
+}
+
+.slides2 img {
+  width: calc(100vw);
+  float: left;
+}
+
+#btn1:checked ~ .slider-inner .slides1 {
   -webkit-transform: translate(0);
           transform: translate(0);
 }
 
-#btn2:checked ~ .slider-inner .slides {
-  -webkit-transform: translate(-1440px);
-          transform: translate(-1440px);
+#btn1:checked ~ .slider-inner .slides2 {
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
-#btn3:checked ~ .slider-inner .slides {
-  -webkit-transform: translate(-2880px);
-          transform: translate(-2880px);
+#btn2:checked ~ .slider-inner .slides1 {
+  -webkit-transform: translate(calc(-100vw));
+          transform: translate(calc(-100vw));
 }
 
-#btn4:checked ~ .slider-inner .slides {
-  -webkit-transform: translate(-4320px);
-          transform: translate(-4320px);
+#btn2:checked ~ .slider-inner .slides2 {
+  -webkit-transform: translate(calc(-100vw));
+          transform: translate(calc(-100vw));
 }
 
-#btn5:checked ~ .slider-inner .slides {
-  -webkit-transform: translate(-5760px);
-          transform: translate(-5760px);
+#btn3:checked ~ .slider-inner .slides1 {
+  -webkit-transform: translate(calc(-2 * 100vw));
+          transform: translate(calc(-2 * 100vw));
+}
+
+#btn3:checked ~ .slider-inner .slides2 {
+  -webkit-transform: translate(calc(-2 * 100vw));
+          transform: translate(calc(-2 * 100vw));
+}
+
+#btn4:checked ~ .slider-inner .slides1 {
+  -webkit-transform: translate(calc(-3 * 100vw));
+          transform: translate(calc(-3 * 100vw));
+}
+
+#btn4:checked ~ .slider-inner .slides2 {
+  -webkit-transform: translate(calc(-3 * 100vw));
+          transform: translate(calc(-3 * 100vw));
+}
+
+#btn5:checked ~ .slider-inner .slides1 {
+  -webkit-transform: translate(calc(-4 * 100vw));
+          transform: translate(calc(-4 * 100vw));
+}
+
+#btn5:checked ~ .slider-inner .slides2 {
+  -webkit-transform: translate(calc(-4 * 100vw));
+          transform: translate(calc(-4 * 100vw));
 }
 
 .products {
@@ -315,10 +368,10 @@ h3 {
   height: 107px;
 }
 
-@media (min-width: 560px) and (max-width: 1000px) {
+@media (max-width: 999px) {
   #logotype {
-    width: 550px;
-    height: 67px;
+    width: 560px;
+    height: 77px;
   }
 }
 
