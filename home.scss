@@ -189,45 +189,65 @@ header {
       }
   }
 
-  #btn1:checked~.slider-inner {
-    .slides1 {
-    transform: translate(0);
-  }
-  .slides2 {
-    transform: translate(0);
-  }
+  #btn1{
+    &:checked {
+        ~.slider-inner {
+        .slides1{
+            transform: translate(0);
+        }
+        .slides2 {
+            transform: translate(0);
+        }
+    }
 }
-#btn2:checked~.slider-inner {
-    .slides1 {
-    transform: translate(calc(-100vw));
-  }
-  .slides2 {
-    transform: translate(calc(-100vw));
-  }
 }
-#btn3:checked~.slider-inner {
-    .slides1 {
-    transform: translate(calc(-2 * 100vw));
-  }
-  .slides2 {
-    transform: translate(calc(-2 * 100vw));
-  }
+#btn2{
+    &:checked {
+        ~.slider-inner {
+        .slides1{
+            transform: translate(calc(-100vw));
+        }
+        .slides2 {
+            transform: translate(calc(-100vw));
+        }
+    }
 }
-#btn4:checked~.slider-inner {
-    .slides1{
-    transform: translate(calc(-3 * 100vw));
-  }
-  .slides2 {
-    transform: translate(calc(-3 * 100vw));
-  }
 }
-#btn5:checked~.slider-inner {
-    .slides1 {
-    transform: translate(calc(-4 * 100vw));
-  }
-  .slides2 {
-    transform: translate(calc(-4 * 100vw));
-  }
+#btn3{
+    &:checked {
+        ~.slider-inner {
+        .slides1{
+            transform: translate(calc(-2 * 100vw));
+        }
+        .slides2 {
+            transform: translate(calc(-2 * 100vw));
+        }
+    }
+}
+}
+#btn4{
+    &:checked {
+        ~.slider-inner {
+        .slides1{
+            transform: translate(calc(-3 * 100vw));
+        }
+        .slides2 {
+            transform: translate(calc(-3 * 100vw));
+        }
+    }
+}
+}
+#btn5{
+    &:checked {
+        ~.slider-inner {
+        .slides1{
+            transform: translate(calc(-4 * 100vw));
+        }
+        .slides2 {
+            transform: translate(calc(-4 * 100vw));
+        }
+    }
+}
 }
 
 .products {
@@ -236,6 +256,9 @@ header {
             text-decoration: none;
             color: currentColor;
             font-size: calc(12px + (12 + 12 * 0.7) * ((100vw - 320px) / 1199));
+            @media (max-width: 999px) {
+                font-size: x-large;
+            }
         }
         img {
             transition: transform 3s ease-out;
@@ -328,10 +351,32 @@ footer {
 }
 
 .navigation-footer {
+    @media (max-width: 999px) {
+    h4
+    {
+    display: block;
+    @media (min-width: 560px) and (max-width: 999px)
+    {
+        font-size: 15pt;
+    }
+        ~ul {
+            display: none;
+        }
+    &:hover{
+        ~ul {
+        display: block;
+    }
+}
+}
+border-bottom: 1px solid rgba($color: gray, $alpha: 0.5);
+}
     ul {
         list-style-type: none;
         font-weight: bold;
         font-size: large;
+        &:hover{
+            display: block;
+        }
         a {
             display: block;
             text-decoration: none;

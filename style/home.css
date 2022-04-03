@@ -282,6 +282,12 @@ header {
   font-size: calc(12px + (12 + 12 * 0.7) * ((100vw - 320px) / 1199));
 }
 
+@media (max-width: 999px) {
+  .products a {
+    font-size: x-large;
+  }
+}
+
 .products img {
   -webkit-transition: -webkit-transform 3s ease-out;
   transition: -webkit-transform 3s ease-out;
@@ -401,10 +407,38 @@ footer {
   font-family: "Poiret One", "Merriweather", "Mulish", "Segoe UI", "Times New Roman", cursive;
 }
 
+@media (max-width: 999px) {
+  .navigation-footer {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  }
+  .navigation-footer h4 {
+    display: block;
+  }
+}
+
+@media (max-width: 999px) and (min-width: 560px) and (max-width: 999px) {
+  .navigation-footer h4 {
+    font-size: 15pt;
+  }
+}
+
+@media (max-width: 999px) {
+  .navigation-footer h4 ~ ul {
+    display: none;
+  }
+  .navigation-footer h4:hover ~ ul {
+    display: block;
+  }
+}
+
 .navigation-footer ul {
   list-style-type: none;
   font-weight: bold;
   font-size: large;
+}
+
+.navigation-footer ul:hover {
+  display: block;
 }
 
 .navigation-footer ul a {
