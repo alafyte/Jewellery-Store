@@ -82,7 +82,8 @@ $font-main: 'Forum', 'Alegreya Sans', 'Segoe UI', 'Times New Roman', cursive;
 header {
     margin-top: 5%;
     @media (max-width: 999px) {
-       margin-top: 2%;
+       margin-top: 3%;
+       margin-bottom: 0;
     }
 }
 #search {
@@ -106,7 +107,7 @@ header {
 .slider {
     position: relative;
     width: 1440px;
-    margin: 50px auto;
+    margin-bottom: 50px;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
         input[name="switch"] {
             display: none;
@@ -162,7 +163,8 @@ header {
   }
 
   .slider-inner {
-    overflow: hidden;
+    width: calc(100vw);
+    overflow-x: hidden;
   }
   .slides1 {
     @media (max-width: 999px) {
@@ -298,13 +300,15 @@ h3 {
     width: 590px;
     height: 107px;
     @media (max-width: 999px) {
-        width: 560px;
+        width: calc(100vw);
         height: 77px;
     }
 }
 body {
     background: linear-gradient(to right, $bgcolor, #EED1D1);
     font-family: $font-main;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 header, footer, .navigation-first {
     font-family: $font;
