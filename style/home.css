@@ -7,6 +7,12 @@
   z-index: 2;
 }
 
+@media (min-width: 560px) and (max-width: 1000px) {
+  .navigation-first {
+    display: none;
+  }
+}
+
 .navigation-first ul {
   margin-left: 2%;
 }
@@ -30,6 +36,12 @@
   transition: text-decoration 0.4s ease-in-out, -webkit-text-decoration 0.4s ease-in-out;
 }
 
+@media (min-width: 560px) and (max-width: 1000px) {
+  .navigation-first ul li a {
+    font-size: 9pt;
+  }
+}
+
 .navigation-first ul li:hover, .navigation-first ul li:focus {
   display: block;
   text-decoration: underline;
@@ -38,6 +50,12 @@
 
 .navigation-second {
   background-color: black;
+}
+
+@media (min-width: 560px) and (max-width: 1000px) {
+  .navigation-second {
+    display: none;
+  }
 }
 
 .navigation-second ul li {
@@ -74,9 +92,21 @@ header {
   margin-top: 5%;
 }
 
+@media (min-width: 560px) and (max-width: 1000px) {
+  header {
+    margin-top: 2%;
+  }
+}
+
 #search {
   width: 300px;
   float: right;
+}
+
+@media (min-width: 560px) and (max-width: 1000px) {
+  #search {
+    display: none;
+  }
 }
 
 .search {
@@ -85,6 +115,106 @@ header {
   right: 3%;
   width: 220px;
   font-family: "Forum", "Alegreya Sans", "Segoe UI", "Times New Roman", cursive;
+}
+
+@media (min-width: 560px) and (max-width: 1000px) {
+  .search {
+    display: none;
+  }
+}
+
+.slider {
+  position: relative;
+  width: 1440px;
+  margin: 50px auto;
+  -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+          box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider input[name="switch"] {
+  display: none;
+}
+
+.switch {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  text-align: center;
+  width: 100%;
+}
+
+.switch label {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  margin: 0 3px;
+  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  border: 5px solid #2f363c;
+  background-color: #738290;
+}
+
+#btn1:checked ~ .switch label[for="btn1"] {
+  background-color: white;
+}
+
+#btn2:checked ~ .switch label[for="btn2"] {
+  background-color: white;
+}
+
+#btn3:checked ~ .switch label[for="btn3"] {
+  background-color: white;
+}
+
+#btn4:checked ~ .switch label[for="btn4"] {
+  background-color: white;
+}
+
+#btn5:checked ~ .switch label[for="btn5"] {
+  background-color: white;
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.slides img {
+  width: 1440px;
+  height: 520px;
+  float: left;
+}
+
+#btn1:checked ~ .slider-inner .slides {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+#btn2:checked ~ .slider-inner .slides {
+  -webkit-transform: translate(-1440px);
+          transform: translate(-1440px);
+}
+
+#btn3:checked ~ .slider-inner .slides {
+  -webkit-transform: translate(-2880px);
+          transform: translate(-2880px);
+}
+
+#btn4:checked ~ .slider-inner .slides {
+  -webkit-transform: translate(-4320px);
+          transform: translate(-4320px);
+}
+
+#btn5:checked ~ .slider-inner .slides {
+  -webkit-transform: translate(-5760px);
+          transform: translate(-5760px);
 }
 
 .products {
@@ -142,38 +272,6 @@ h3 {
   text-align: center;
 }
 
-.slider {
-  position: relative;
-  margin-bottom: 3%;
-}
-
-.slider #slider {
-  max-width: 100%;
-  -webkit-transition: opacity 1s ease-in;
-  transition: opacity 1s ease-in;
-  opacity: 1;
-}
-
-.slider button {
-  border-radius: 100%;
-  border: none;
-  height: 60px;
-  padding-right: 33px;
-  width: 60px;
-  outline: none;
-  background: rgba(239, 235, 235, 0.5);
-  position: absolute;
-  top: 40%;
-  cursor: pointer;
-  z-index: 1;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-.slider button:hover {
-  background: #7c7c7c6b;
-}
-
 .flex-first {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,6 +311,15 @@ h3 {
   display: block;
   margin: auto;
   margin-bottom: 2%;
+  width: 590px;
+  height: 107px;
+}
+
+@media (min-width: 560px) and (max-width: 1000px) {
+  #logotype {
+    width: 550px;
+    height: 67px;
+  }
 }
 
 body {
@@ -228,19 +335,6 @@ header, footer, .navigation-first {
 .about {
   font-size: 14pt;
   font-weight: bolder;
-}
-
-#slider {
-  display: block;
-  margin: auto;
-}
-
-#prev {
-  left: 70px;
-}
-
-#next {
-  right: 70px;
 }
 
 footer {
