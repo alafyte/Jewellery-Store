@@ -358,4 +358,19 @@ footer {
     padding-bottom: 2%;
   }
 }
+
+.breadcrumps {
+  margin-bottom: 0;
+}
+
+.breadcrumps li {
+  font-size: x-large;
+  display: inline;
+  list-style: none;
+  background-image: url(/files/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 7% 55%;
+  padding-left: 25px;
+  margin: 0;
+}
 /*# sourceMappingURL=catalog.css.map */
