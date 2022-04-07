@@ -313,6 +313,55 @@ footer {
   width: 100%;
 }
 
+.rings figure {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-right: 2%;
+  max-width: 20%;
+}
+
+@media (max-width: 560px) {
+  .rings figure {
+    max-width: 80%;
+  }
+}
+
+.rings figure img {
+  max-width: 100%;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 560px) {
+  .rings figure img {
+    max-width: 100%;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+  }
+}
+
+.rings figcaption {
+  margin-left: 3%;
+  font-family: "Poiret One", "Merriweather", "Mulish", "Segoe UI", "Times New Roman", cursive;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.rings figcaption span {
+  color: darkred;
+  font-weight: 900;
+  font-size: 14pt;
+  margin-right: 5%;
+}
+
+.rings figcaption .old-price {
+  color: rgba(139, 0, 0, 0.5);
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  font-size: 12pt;
+}
+
 @media (max-width: 999px) {
   .navigation-footer {
     border-bottom: 1px solid rgba(128, 128, 128, 0.5);
@@ -360,6 +409,7 @@ footer {
 }
 
 .breadcrumps {
+  margin-left: 3%;
   margin-bottom: 0;
 }
 
@@ -373,4 +423,4 @@ footer {
   padding-left: 25px;
   margin: 0;
 }
-/*# sourceMappingURL=catalog.css.map */
+/*# sourceMappingURL=rings.css.map */

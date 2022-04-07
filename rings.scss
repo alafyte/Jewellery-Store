@@ -250,6 +250,46 @@ footer {
     width: 100%;
 }
 
+.rings {
+    figure { 
+        background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+        margin-right: 2%;
+        max-width: 20%;
+        @media (max-width: 560px) {
+            max-width: 80%;
+        }
+        img {
+            max-width: 100%;
+            max-height: 200px;
+            width: auto;
+            height: auto;
+            @media (max-width: 560px) {
+                max-width: 100%;
+                max-height: 300px;
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+    figcaption {
+       margin-left: 3%;
+       font-family: $font;
+       font-size: 12pt;
+       font-weight: bold;
+       span {
+           color: darkred;
+           font-weight: 900;
+           font-size: 14pt;
+           margin-right: 5%;
+       }
+       .old-price {
+        color: rgba($color: darkred, $alpha: 0.5);
+        text-decoration-line: line-through;
+        font-size: 12pt;
+       }
+    }
+}
+
 .navigation-footer {
         @media (max-width: 999px) {
         h4
@@ -289,6 +329,7 @@ footer {
 }
 
 .breadcrumps {
+    margin-left: 3%;
     li {
         font-size: x-large;
         display: inline;
