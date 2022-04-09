@@ -257,6 +257,7 @@ footer {
         max-width: 20%;
         @media (max-width: 560px) {
             max-width: 80%;
+            margin-top: 0;
         }
         img {
             max-width: 100%;
@@ -276,16 +277,25 @@ footer {
        font-family: $font;
        font-size: 12pt;
        font-weight: bold;
-       span {
+       @media (min-width: 560px) and (max-width: 999px) {
+        font-size: 10pt;
+       }
+        span {
            color: darkred;
            font-weight: 900;
            font-size: 14pt;
            margin-right: 5%;
+           @media (min-width: 560px) and (max-width: 999px) {
+            font-size: 12pt;
+           }
        }
        .old-price {
         color: rgba($color: darkred, $alpha: 0.5);
         text-decoration-line: line-through;
         font-size: 12pt;
+        @media (min-width: 560px) and (max-width: 999px) {
+            font-size: 10pt;
+           }
        }
     }
 }
@@ -334,7 +344,7 @@ footer {
         font-size: x-large;
         display: inline;
         list-style: none;
-        background-image: url(/files/arrow.svg);
+        background-image: url(arrow.svg);
         background-repeat: no-repeat;
         background-position: 7% 55%;
         padding-left: 25px;

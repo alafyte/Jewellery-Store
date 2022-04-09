@@ -322,6 +322,7 @@ footer {
 @media (max-width: 560px) {
   .rings figure {
     max-width: 80%;
+    margin-top: 0;
   }
 }
 
@@ -348,6 +349,12 @@ footer {
   font-weight: bold;
 }
 
+@media (min-width: 560px) and (max-width: 999px) {
+  .rings figcaption {
+    font-size: 10pt;
+  }
+}
+
 .rings figcaption span {
   color: darkred;
   font-weight: 900;
@@ -355,11 +362,23 @@ footer {
   margin-right: 5%;
 }
 
+@media (min-width: 560px) and (max-width: 999px) {
+  .rings figcaption span {
+    font-size: 12pt;
+  }
+}
+
 .rings figcaption .old-price {
   color: rgba(139, 0, 0, 0.5);
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
   font-size: 12pt;
+}
+
+@media (min-width: 560px) and (max-width: 999px) {
+  .rings figcaption .old-price {
+    font-size: 10pt;
+  }
 }
 
 @media (max-width: 999px) {
@@ -417,7 +436,7 @@ footer {
   font-size: x-large;
   display: inline;
   list-style: none;
-  background-image: url(/files/arrow.svg);
+  background-image: url(arrow.svg);
   background-repeat: no-repeat;
   background-position: 7% 55%;
   padding-left: 25px;
