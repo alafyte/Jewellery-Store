@@ -242,111 +242,22 @@ body {
 header, footer, .navigation-first {
     font-family: $font;
 }
-footer {
-    border-top: 1px solid rgba($color: gray, $alpha: 0.5);
-    padding-top: 2%;
-    background-color: rgba($color: $footer-color, $alpha: 0.5);
-    font-family: $font;
-    width: 100%;
-}
 
-.rings {
-    figure { 
-        background-color: rgba($color: #FFFFFF, $alpha: 0.5);
-        margin-right: 2%;
-        max-width: 20%;
-        @media (max-width: 560px) {
-            max-width: 80%;
-            margin-top: 0;
-        }
-        img {
-            max-width: 100%;
-            max-height: 200px;
-            width: auto;
-            height: auto;
-            @media (max-width: 560px) {
-                max-width: 100%;
-                max-height: 300px;
-                width: auto;
-                height: auto;
-            }
-        }
-    }
-    figcaption {
-       margin-left: 3%;
-       font-family: $font;
-       font-size: 12pt;
-       font-weight: bold;
-       @media (min-width: 560px) and (max-width: 999px) {
-        font-size: 10pt;
-       }
-        span {
-           color: darkred;
-           font-weight: 900;
-           font-size: 14pt;
-           margin-right: 5%;
-           @media (min-width: 560px) and (max-width: 999px) {
-            font-size: 12pt;
-           }
-       }
-       .old-price {
-        color: rgba($color: darkred, $alpha: 0.5);
-        text-decoration-line: line-through;
-        font-size: 12pt;
-        @media (min-width: 560px) and (max-width: 999px) {
-            font-size: 10pt;
-           }
-       }
-    }
+.product-image {
+    max-width: 100%;
+    max-height: 298px;
+    width: auto;
+    height: auto;
+    border: 3px outset gray;
 }
-
-.navigation-footer {
-        @media (max-width: 999px) {
-        h4
-        {
-        display: block;
-        @media (min-width: 560px) and (max-width: 999px)
-        {
-            font-size: 15pt;
-        }
-            ~ul {
-                display: none;
-            }
-        &:hover{
-            ~ul {
-            display: block;
-        }
-    }
-    }
-    border-bottom: 1px solid rgba($color: gray, $alpha: 0.5);
-    }
-    ul {
-        list-style-type: none;
-        font-weight: bold;
-        font-size: large;
-        &:hover{
-            display: block;
-        }
-        a {
-            @media (max-width: 999px) {
-                padding-bottom: 2%;
-            }
-            display: block;
-            text-decoration: none;
-            color: rgba($color: #000000, $alpha: 0.7);
-        }
-    }
-}
-
 .breadcrumps {
-    margin-left: 3%;
     li {
         font-size: x-large;
         display: inline;
         list-style: none;
         background-image: url(arrow.svg);
         background-repeat: no-repeat;
-        background-position: 7% 55%;
+        background-position: 7px 55%;
         padding-left: 25px;
         margin: 0;
         a {
@@ -354,6 +265,58 @@ footer {
             color: #000000;
         }
     }
+
     margin-bottom: 0;
 }
+
+
+
+
+footer {
+    border-top: 1px solid rgba($color: gray, $alpha: 0.5);
+    padding-top: 2%;
+    background-color: rgba($color: $footer-color, $alpha: 0.5);
+    font-family: $font;
+    width: 100%;
+}
+.navigation-footer {
+    @media (max-width: 999px) {
+    h4
+    {
+    display: block;
+    @media (min-width: 560px) and (max-width: 999px)
+    {
+        font-size: 15pt;
+    }
+        ~ul {
+            display: none;
+        }
+    &:hover{
+        ~ul {
+        display: block;
+    }
+}
+}
+border-bottom: 1px solid rgba($color: gray, $alpha: 0.5);
+}
+ul {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: large;
+    &:hover{
+        display: block;
+    }
+    a {
+        @media (max-width: 999px) {
+            padding-bottom: 2%;
+        }
+        display: block;
+        text-decoration: none;
+        color: rgba($color: #000000, $alpha: 0.7);
+    }
+}
+}
+
+
+
 

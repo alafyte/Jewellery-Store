@@ -305,80 +305,40 @@ header, footer, .navigation-first {
   font-family: "Poiret One", "Merriweather", "Mulish", "Segoe UI", "Times New Roman", cursive;
 }
 
+.product-image {
+  max-width: 100%;
+  max-height: 298px;
+  width: auto;
+  height: auto;
+  border: 3px outset gray;
+}
+
+.breadcrumps {
+  margin-bottom: 0;
+}
+
+.breadcrumps li {
+  font-size: x-large;
+  display: inline;
+  list-style: none;
+  background-image: url(arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 7px 55%;
+  padding-left: 25px;
+  margin: 0;
+}
+
+.breadcrumps li a {
+  text-decoration: none;
+  color: #000000;
+}
+
 footer {
   border-top: 1px solid rgba(128, 128, 128, 0.5);
   padding-top: 2%;
   background-color: rgba(245, 205, 205, 0.5);
   font-family: "Poiret One", "Merriweather", "Mulish", "Segoe UI", "Times New Roman", cursive;
   width: 100%;
-}
-
-.rings figure {
-  background-color: rgba(255, 255, 255, 0.5);
-  margin-right: 2%;
-  max-width: 20%;
-}
-
-@media (max-width: 560px) {
-  .rings figure {
-    max-width: 80%;
-    margin-top: 0;
-  }
-}
-
-.rings figure img {
-  max-width: 100%;
-  max-height: 200px;
-  width: auto;
-  height: auto;
-}
-
-@media (max-width: 560px) {
-  .rings figure img {
-    max-width: 100%;
-    max-height: 300px;
-    width: auto;
-    height: auto;
-  }
-}
-
-.rings figcaption {
-  margin-left: 3%;
-  font-family: "Poiret One", "Merriweather", "Mulish", "Segoe UI", "Times New Roman", cursive;
-  font-size: 12pt;
-  font-weight: bold;
-}
-
-@media (min-width: 560px) and (max-width: 999px) {
-  .rings figcaption {
-    font-size: 10pt;
-  }
-}
-
-.rings figcaption span {
-  color: darkred;
-  font-weight: 900;
-  font-size: 14pt;
-  margin-right: 5%;
-}
-
-@media (min-width: 560px) and (max-width: 999px) {
-  .rings figcaption span {
-    font-size: 12pt;
-  }
-}
-
-.rings figcaption .old-price {
-  color: rgba(139, 0, 0, 0.5);
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
-  font-size: 12pt;
-}
-
-@media (min-width: 560px) and (max-width: 999px) {
-  .rings figcaption .old-price {
-    font-size: 10pt;
-  }
 }
 
 @media (max-width: 999px) {
@@ -426,25 +386,4 @@ footer {
     padding-bottom: 2%;
   }
 }
-
-.breadcrumps {
-  margin-left: 3%;
-  margin-bottom: 0;
-}
-
-.breadcrumps li {
-  font-size: x-large;
-  display: inline;
-  list-style: none;
-  background-image: url(arrow.svg);
-  background-repeat: no-repeat;
-  background-position: 7% 55%;
-  padding-left: 25px;
-  margin: 0;
-}
-
-.breadcrumps li a {
-  text-decoration: none;
-  color: #000000;
-}
-/*# sourceMappingURL=rings.css.map */
+/*# sourceMappingURL=products.css.map */
