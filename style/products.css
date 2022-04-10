@@ -328,9 +328,106 @@ header, footer, .navigation-first {
   margin: 0;
 }
 
+@media (max-width: 560px) {
+  .breadcrumps li {
+    display: none;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 999px) {
+  .breadcrumps li {
+    font-size: 15pt;
+  }
+}
+
 .breadcrumps li a {
   text-decoration: none;
   color: #000000;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: x-large;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 999px) {
+  .description {
+    font-size: 14pt;
+  }
+}
+
+.ring-size {
+  font-size: x-large;
+  border: none;
+  display: block;
+  margin-top: 2%;
+  margin-bottom: 9%;
+}
+
+@media (max-width: 999px) {
+  .ring-size {
+    font-size: 14pt;
+  }
+}
+
+@media (max-width: 560px) {
+  .ring-size {
+    margin-bottom: 12%;
+  }
+}
+
+.size-desc {
+  float: left;
+  margin-right: 7%;
+}
+
+.size {
+  float: left;
+  margin-right: 7%;
+  width: 10%;
+  font-weight: bold;
+  text-align: center;
+  background-color: #efebeb;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.size:hover {
+  background-color: #000000;
+  color: #efebeb;
+}
+
+.price {
+  font-size: xx-large;
+  color: darkred;
+  font-weight: 900;
+  margin-right: 3%;
+}
+
+.old-price {
+  color: rgba(139, 0, 0, 0.5);
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  font-size: 18pt;
+}
+
+@media (min-width: 560px) and (max-width: 999px) {
+  .old-price {
+    font-size: 16pt;
+  }
 }
 
 footer {
