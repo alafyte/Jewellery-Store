@@ -259,7 +259,16 @@ footer {
             max-width: 80%;
             margin-top: 0;
         }
+        a {
+            z-index: 1;
+            box-shadow: none;
+            transition: box-shadow 1s ease-in-out;
+            &:hover {
+            box-shadow: inset 0 0 0 10px gray;
+          }
+        }
         img {
+            z-index: 2;
             max-width: 100%;
             max-height: 200px;
             width: auto;

@@ -326,7 +326,23 @@ footer {
   }
 }
 
+.rings figure a {
+  z-index: 1;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: -webkit-box-shadow 1s ease-in-out;
+  transition: -webkit-box-shadow 1s ease-in-out;
+  transition: box-shadow 1s ease-in-out;
+  transition: box-shadow 1s ease-in-out, -webkit-box-shadow 1s ease-in-out;
+}
+
+.rings figure a:hover {
+  -webkit-box-shadow: inset 0 0 0 10px gray;
+          box-shadow: inset 0 0 0 10px gray;
+}
+
 .rings figure img {
+  z-index: 2;
   max-width: 100%;
   max-height: 200px;
   width: auto;
