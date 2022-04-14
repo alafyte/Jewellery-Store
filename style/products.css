@@ -313,6 +313,12 @@ header, footer, .navigation-first {
   border: 3px outset gray;
 }
 
+@media (max-width: 560px) {
+  #product-image {
+    margin-left: 2%;
+  }
+}
+
 .breadcrumps {
   margin-bottom: 0;
 }
