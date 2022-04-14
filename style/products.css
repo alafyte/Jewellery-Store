@@ -430,6 +430,15 @@ header, footer, .navigation-first {
   }
 }
 
+.add-description {
+  font-size: x-large;
+  text-align: justify;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  margin-top: 2%;
+}
+
 footer {
   border-top: 1px solid rgba(128, 128, 128, 0.5);
   padding-top: 2%;
