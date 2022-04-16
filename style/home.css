@@ -376,7 +376,7 @@ header {
 .products a {
   text-decoration: none;
   color: currentColor;
-  font-size: calc(12px + (12 + 12 * 0.7) * ((100vw - 320px) / 1199));
+  font-size: x-large;
 }
 
 @media (max-width: 999px) {

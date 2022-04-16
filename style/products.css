@@ -118,10 +118,6 @@
   font-size: large;
 }
 
-.menu a:hover {
-  background-color: gray;
-}
-
 .navigation-mobile {
   max-height: 0;
   -webkit-transition: max-height .5s ease-out;
