@@ -341,27 +341,35 @@ header {
             text-decoration: none;
             color: currentColor;
             font-size: x-large;
+            margin: 0;
             @media (max-width: 999px) {
                 font-size: x-large;
             }
         }
         img {
+            border: 3px outset gray;
             transition: transform 3s ease-out;
-            max-width: 105%;
+            max-width: 100%;
             max-height: 240px;
             width: auto;
             height: auto;
             &:hover {
                 transform: scale(1.1);
             }
-        }
+        }       
         div {
+            display: table;
+            text-align: center;
             span {
+                display: block;
                 position: relative;
+                max-width: 30%;
+                margin: 0;
                 z-index: 1;
-                top: 50px;
-                left: 23px;
+                top: 43px;
+                left: 9%;
             }
+            
         }
     
 }
@@ -437,7 +445,7 @@ footer {
 }
 
 .navigation-footer {
-    @media (max-width: 999px) {
+    @media (max-width: 560px) {
     h4
     {
     display: block;

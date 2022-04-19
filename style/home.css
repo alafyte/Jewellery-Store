@@ -377,6 +377,7 @@ header {
   text-decoration: none;
   color: currentColor;
   font-size: x-large;
+  margin: 0;
 }
 
 @media (max-width: 999px) {
@@ -386,11 +387,12 @@ header {
 }
 
 .products img {
+  border: 3px outset gray;
   -webkit-transition: -webkit-transform 3s ease-out;
   transition: -webkit-transform 3s ease-out;
   transition: transform 3s ease-out;
   transition: transform 3s ease-out, -webkit-transform 3s ease-out;
-  max-width: 105%;
+  max-width: 100%;
   max-height: 240px;
   width: auto;
   height: auto;
@@ -401,11 +403,19 @@ header {
           transform: scale(1.1);
 }
 
+.products div {
+  display: table;
+  text-align: center;
+}
+
 .products div span {
+  display: block;
   position: relative;
+  max-width: 30%;
+  margin: 0;
   z-index: 1;
-  top: 50px;
-  left: 23px;
+  top: 43px;
+  left: 9%;
 }
 
 .search-button {
@@ -505,7 +515,7 @@ footer {
   width: 100%;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 560px) {
   .navigation-footer {
     border-bottom: 1px solid rgba(128, 128, 128, 0.5);
   }
@@ -514,13 +524,13 @@ footer {
   }
 }
 
-@media (max-width: 999px) and (min-width: 560px) and (max-width: 999px) {
+@media (max-width: 560px) and (min-width: 560px) and (max-width: 999px) {
   .navigation-footer h4 {
     font-size: 15pt;
   }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 560px) {
   .navigation-footer h4 ~ ul {
     display: none;
   }
