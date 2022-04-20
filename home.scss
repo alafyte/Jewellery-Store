@@ -444,40 +444,84 @@ footer {
     width: 100%;
 }
 
-.navigation-footer {
-    @media (max-width: 560px) {
-    h4
-    {
-    display: block;
-    @media (min-width: 560px) and (max-width: 999px)
-    {
-        font-size: 15pt;
+.wrapper {
+    @media (max-width: 710px) {
+        max-width: 710px;
+        width: 100%;
     }
-        ~ul {
-            display: none;
-        }
-    &:hover{
-        ~ul {
-        display: block;
-    }
-    }
-    }
-    border-bottom: 1px solid rgba($color: gray, $alpha: 0.5);
-    }
-    ul {
-        list-style-type: none;
-        font-weight: bold;
-        font-size: large;
-        &:hover{
-            display: block;
-        }
-        a {
-            @media (max-width: 999px) {
-                padding-bottom: 2%;
+     nav {
+        @media (max-width: 710px) {
+            label {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    cursor: pointer;
+                    user-select: none;
+                    border-bottom: 1px solid #3E474F;
+                    h4 {
+                        font-size: 20pt;
+                    }
+                }
+            .cross{
+                margin-right:15px;
+                margin-top:3px;
+                &::after, &::before {
+                    content: '';
+                    border-top: 2px solid #3E474F;
+                    width: 15px;
+                    display: block;
+                    margin-top: 18px;
+                    transition: 0.3s;
+                }
+                &::after {
+                    transform: rotate(90deg);
+                    margin-top: -2px;
+                }
             }
-            display: block;
-            text-decoration: none;
-            color: rgba($color: #000000, $alpha: 0.7);
+            .content {
+                font-size: large;
+                box-sizing: border-box;
+                margin: 10px 10px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height, .5s;
+                li {
+                    line-height: 40px;
+                }
+            }
         }
+         input {
+            display: none;
+            @media (max-width: 710px) {
+                &:checked {
+                    ~.content {
+                        max-height: 400px;
+                        transition: max-height, 1s;
+                    }
+                    ~label {
+                        .cross {
+                            &::before {
+                                transform: rotate(180deg);
+                            }
+                            &::after {
+                                transform: rotate(0deg);
+                            }
+                        }
+                    }
+                }
+            }
+         }
+         ul {
+            font-weight: bold;
+            font-size: larger;
+            list-style-type: none; 
+            li {
+                line-height: 30px;
+            }
+            a {
+                text-decoration: none ;
+                color: black;
+            }
+         }
     }
 }
