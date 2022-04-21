@@ -241,11 +241,6 @@ header {
         background-color: white;
     }
 }
-#btn5:checked~.switch {
-    label[for="btn5"] {
-        background-color: white;
-    }
-  }
 
   .slider-inner {
     width: calc(100vw);
@@ -322,18 +317,7 @@ header {
     }
 }
 }
-#btn5{
-    &:checked {
-        ~.slider-inner {
-        .slides1{
-            transform: translate(calc(-4 * 100vw));
-        }
-        .slides2 {
-            transform: translate(calc(-4 * 100vw));
-        }
-    }
-}
-}
+
 
 .products {
     margin-bottom: 2%;

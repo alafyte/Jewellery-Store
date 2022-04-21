@@ -276,10 +276,6 @@ header {
   background-color: white;
 }
 
-#btn5:checked ~ .switch label[for="btn5"] {
-  background-color: white;
-}
-
 .slider-inner {
   width: calc(100vw);
   overflow-x: hidden;
@@ -357,16 +353,6 @@ header {
 #btn4:checked ~ .slider-inner .slides2 {
   -webkit-transform: translate(calc(-3 * 100vw));
           transform: translate(calc(-3 * 100vw));
-}
-
-#btn5:checked ~ .slider-inner .slides1 {
-  -webkit-transform: translate(calc(-4 * 100vw));
-          transform: translate(calc(-4 * 100vw));
-}
-
-#btn5:checked ~ .slider-inner .slides2 {
-  -webkit-transform: translate(calc(-4 * 100vw));
-          transform: translate(calc(-4 * 100vw));
 }
 
 .products {
