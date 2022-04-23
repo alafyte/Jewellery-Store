@@ -78,6 +78,33 @@ $font-main: 'Forum', 'Alegreya Sans', 'Segoe UI', 'Times New Roman', cursive;
         }
     }
 }
+.flex-first {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.flex-second {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+#logotype {
+    display: block;
+    margin: auto;
+    margin-bottom: 2%;
+    width: 590px;
+    height: 107px;
+    @media (max-width: 999px) {
+        width: calc(100vw);
+        height: 77px;
+    }
+}
 .navigation-mobile, .hamb, #side-menu {
     @media (min-width: 1000px) {
         display: none;
@@ -188,7 +215,21 @@ header {
         display: none;
     }
 }
-
+.search-button {
+    position: absolute;
+    top: 3px; 
+    height: 30px;
+    width: 30px;
+    background-color: azure;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: 0.2s ease-in-out;
+    &:hover {
+    background: #7c7c7c6b;
+    }
+}
 .slider {
     position: relative;
     width: 1440px;
@@ -358,52 +399,12 @@ header {
     
 }
 
-.search-button {
-    position: absolute;
-    top: 3px; 
-    height: 30px;
-    width: 30px;
-    background-color: azure;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    transition: 0.2s ease-in-out;
-    &:hover {
-    background: #7c7c7c6b;
-    }
-}
+
 h3 {
     text-align: center;
 }
 
-.flex-first {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: space-between;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
 
-.flex-second {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: space-between;
-    align-items: flex-start;
-    justify-content: space-around;
-}
-
-#logotype {
-    display: block;
-    margin: auto;
-    margin-bottom: 2%;
-    width: 590px;
-    height: 107px;
-    @media (max-width: 999px) {
-        width: calc(100vw);
-        height: 77px;
-    }
-}
 body {
     background: linear-gradient(to right, $bgcolor, #EED1D1);
     font-family: $font-main;
