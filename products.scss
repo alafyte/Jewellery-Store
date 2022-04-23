@@ -249,7 +249,8 @@ header, footer, .navigation-first {
 }
 #product-image {
     @media (max-width: 560px) {
-        margin-left: 2%;
+        display: table;
+        text-align: center;
        }
 }
 

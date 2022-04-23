@@ -311,7 +311,8 @@ header, footer, .navigation-first {
 
 @media (max-width: 560px) {
   #product-image {
-    margin-left: 2%;
+    display: table;
+    text-align: center;
   }
 }
 
