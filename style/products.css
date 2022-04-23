@@ -371,6 +371,12 @@ header, footer, .navigation-first {
   }
 }
 
+.item-number {
+  font-size: medium;
+  color: rgba(0, 0, 0, 0.3);
+  padding-bottom: 2%;
+}
+
 .ring-size {
   font-size: x-large;
   border: none;

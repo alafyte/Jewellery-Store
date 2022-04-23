@@ -288,6 +288,11 @@ header, footer, .navigation-first {
         font-size: 14pt;
        }
 }
+.item-number {
+    font-size: medium;
+    color: rgba($color: #000000, $alpha: 0.3);
+    padding-bottom: 2%
+}
 .ring-size {
    font-size: x-large;
    border: none;
