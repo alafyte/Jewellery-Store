@@ -1,5 +1,0 @@
-    <section>
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A66777f4fa4faf87318b1b8ccab8f5d98a8bd6e00597a4ad06399ea4ef3bcc411&amp;width=1000&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
-    </section>
-
-https://habr.com/ru/post/438382/
