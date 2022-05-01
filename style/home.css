@@ -58,7 +58,7 @@
   transition: all 0.5s;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 556px) {
   .slides1 {
     display: none;
   }
@@ -75,7 +75,7 @@
   transition: all 0.5s;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 557px) {
   .slides2 {
     display: none;
   }

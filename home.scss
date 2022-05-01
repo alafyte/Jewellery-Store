@@ -53,7 +53,7 @@
     overflow-x: hidden;
   }
   .slides1 {
-    @media (max-width: 999px) {
+    @media (max-width: 556px) {
         display: none;
     }
     width: calc(5 * 100vw);
@@ -64,7 +64,7 @@
       }
   }
   .slides2 {
-    @media (min-width: 1000px) {
+    @media (min-width: 557px) {
         display: none;
     }
     width: calc(5 * 100vw);

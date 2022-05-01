@@ -13,12 +13,12 @@ h3 {
     text-align: center;
 }
 .mobile {
-    @media (min-width: 1000px) {
+    @media (min-width: 557px) {
         display: none;
     }
 }
 .desktop {
-    @media (max-width: 999px) {
+    @media (max-width: 556px) {
         display: none;
     }
 }
