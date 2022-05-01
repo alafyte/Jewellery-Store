@@ -18,6 +18,7 @@
   -webkit-transition: -webkit-box-shadow 1s ease-in-out;
   transition: -webkit-box-shadow 1s ease-in-out;
   transition: box-shadow 1s ease-in-out;
+  -o-transition: box-shadow 1s ease-in-out;
   transition: box-shadow 1s ease-in-out, -webkit-box-shadow 1s ease-in-out;
 }
 

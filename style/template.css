@@ -33,6 +33,7 @@
   -webkit-transition: -webkit-text-decoration 0.4s ease-in-out;
   transition: -webkit-text-decoration 0.4s ease-in-out;
   transition: text-decoration 0.4s ease-in-out;
+  -o-transition: text-decoration 0.4s ease-in-out;
   transition: text-decoration 0.4s ease-in-out, -webkit-text-decoration 0.4s ease-in-out;
 }
 
@@ -77,6 +78,7 @@
   background-color: #efebeb;
   text-decoration: underline;
   -webkit-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 
@@ -119,6 +121,7 @@
 .navigation-mobile {
   max-height: 0;
   -webkit-transition: max-height .5s ease-out;
+  -o-transition: max-height .5s ease-out;
   transition: max-height .5s ease-out;
   z-index: 3;
 }
@@ -146,6 +149,7 @@
   height: 100%;
   position: absolute;
   -webkit-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
   transition: all .2s ease-out;
   width: 100%;
 }
@@ -173,12 +177,14 @@
 
 .side-menu:checked ~ .hamb .hamb-line::before {
   -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   top: 0;
 }
 
 .side-menu:checked ~ .hamb .hamb-line::after {
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 0;
 }
@@ -230,6 +236,7 @@ header {
   cursor: pointer;
   padding: 0;
   -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
@@ -290,6 +297,7 @@ header {
 body {
   background: -webkit-gradient(linear, left top, right top, from(#efebeb), to(#EED1D1));
   background: linear-gradient(to right, #efebeb, #EED1D1);
+  background: -o-linear-gradient(left, #efebeb, #EED1D1);
   font-family: "Forum", "Alegreya Sans", "Segoe UI", "Times New Roman", cursive;
   max-width: 100%;
   overflow-x: hidden;
@@ -344,10 +352,12 @@ footer {
     display: block;
     margin-top: 18px;
     -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
   }
   .wrapper nav .cross::after {
     -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
             transform: rotate(90deg);
     margin-top: -2px;
   }
@@ -359,6 +369,7 @@ footer {
     max-height: 0;
     overflow: hidden;
     -webkit-transition: max-height, .5s;
+    -o-transition: max-height, .5s;
     transition: max-height, .5s;
   }
   .wrapper nav .content li {
@@ -374,15 +385,18 @@ footer {
   .wrapper nav input:checked ~ .content {
     max-height: 400px;
     -webkit-transition: max-height, 1s;
+    -o-transition: max-height, 1s;
     transition: max-height, 1s;
   }
   .wrapper nav input:checked ~ label .cross::before {
     -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
             transform: rotate(180deg);
   }
   .wrapper nav input:checked ~ label .cross::after {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
   }
 }
 

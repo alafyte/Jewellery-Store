@@ -55,6 +55,7 @@
 .slides1 {
   width: calc(5 * 100vw);
   -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -72,6 +73,7 @@
 .slides2 {
   width: calc(5 * 100vw);
   -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -88,21 +90,25 @@
 
 #btn1:checked ~ .slider-inner .slides1, #btn1:checked ~ .slider-inner .slides2 {
   -webkit-transform: translate(0);
+  -ms-transform: translate(0);
           transform: translate(0);
 }
 
 #btn2:checked ~ .slider-inner .slides1, #btn2:checked ~ .slider-inner .slides2 {
   -webkit-transform: translate(calc(-100vw));
+  -ms-transform: translate(calc(-100vw));
           transform: translate(calc(-100vw));
 }
 
 #btn3:checked ~ .slider-inner .slides1, #btn3:checked ~ .slider-inner .slides2 {
   -webkit-transform: translate(calc(-2 * 100vw));
+  -ms-transform: translate(calc(-2 * 100vw));
           transform: translate(calc(-2 * 100vw));
 }
 
 #btn4:checked ~ .slider-inner .slides1, #btn4:checked ~ .slider-inner .slides2 {
   -webkit-transform: translate(calc(-3 * 100vw));
+  -ms-transform: translate(calc(-3 * 100vw));
           transform: translate(calc(-3 * 100vw));
 }
 
@@ -128,6 +134,7 @@
   -webkit-transition: -webkit-transform 3s ease-out;
   transition: -webkit-transform 3s ease-out;
   transition: transform 3s ease-out;
+  -o-transition: transform 3s ease-out;
   transition: transform 3s ease-out, -webkit-transform 3s ease-out;
   max-width: 100%;
   max-height: 240px;
@@ -137,6 +144,7 @@
 
 .products img:hover {
   -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
 
