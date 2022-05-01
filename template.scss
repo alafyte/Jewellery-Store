@@ -31,18 +31,14 @@ $font-main: 'Forum', 'Alegreya Sans', 'Segoe UI', 'Times New Roman', cursive;
                     @media (max-width: 999px) {
                         font-size: 9pt;
                     }
-                }
 
                     &:hover, &:focus {
-                        display: block;
                         text-decoration: underline;
-                        color: #EED1D1;
                     }
-                
-
-            }
+                }
         }
     }
+}
 
 .navigation-second {
     background-color: black;

@@ -86,42 +86,22 @@
   float: left;
 }
 
-#btn1:checked ~ .slider-inner .slides1 {
+#btn1:checked ~ .slider-inner .slides1, #btn1:checked ~ .slider-inner .slides2 {
   -webkit-transform: translate(0);
           transform: translate(0);
 }
 
-#btn1:checked ~ .slider-inner .slides2 {
-  -webkit-transform: translate(0);
-          transform: translate(0);
-}
-
-#btn2:checked ~ .slider-inner .slides1 {
+#btn2:checked ~ .slider-inner .slides1, #btn2:checked ~ .slider-inner .slides2 {
   -webkit-transform: translate(calc(-100vw));
           transform: translate(calc(-100vw));
 }
 
-#btn2:checked ~ .slider-inner .slides2 {
-  -webkit-transform: translate(calc(-100vw));
-          transform: translate(calc(-100vw));
-}
-
-#btn3:checked ~ .slider-inner .slides1 {
+#btn3:checked ~ .slider-inner .slides1, #btn3:checked ~ .slider-inner .slides2 {
   -webkit-transform: translate(calc(-2 * 100vw));
           transform: translate(calc(-2 * 100vw));
 }
 
-#btn3:checked ~ .slider-inner .slides2 {
-  -webkit-transform: translate(calc(-2 * 100vw));
-          transform: translate(calc(-2 * 100vw));
-}
-
-#btn4:checked ~ .slider-inner .slides1 {
-  -webkit-transform: translate(calc(-3 * 100vw));
-          transform: translate(calc(-3 * 100vw));
-}
-
-#btn4:checked ~ .slider-inner .slides2 {
+#btn4:checked ~ .slider-inner .slides1, #btn4:checked ~ .slider-inner .slides2 {
   -webkit-transform: translate(calc(-3 * 100vw));
           transform: translate(calc(-3 * 100vw));
 }

@@ -78,10 +78,7 @@
   #btn1{
     &:checked {
         ~.slider-inner {
-        .slides1{
-            transform: translate(0);
-        }
-        .slides2 {
+        .slides1, .slides2{
             transform: translate(0);
         }
     }
@@ -90,10 +87,7 @@
 #btn2{
     &:checked {
         ~.slider-inner {
-        .slides1{
-            transform: translate(calc(-100vw));
-        }
-        .slides2 {
+        .slides1, .slides2{
             transform: translate(calc(-100vw));
         }
     }
@@ -102,10 +96,7 @@
 #btn3{
     &:checked {
         ~.slider-inner {
-        .slides1{
-            transform: translate(calc(-2 * 100vw));
-        }
-        .slides2 {
+        .slides1, .slides2{
             transform: translate(calc(-2 * 100vw));
         }
     }
@@ -114,10 +105,7 @@
 #btn4{
     &:checked {
         ~.slider-inner {
-        .slides1{
-            transform: translate(calc(-3 * 100vw));
-        }
-        .slides2 {
+        .slides1, .slides2{
             transform: translate(calc(-3 * 100vw));
         }
     }
