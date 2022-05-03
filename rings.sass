@@ -1,0 +1,77 @@
+$font: "Poiret One", "Merriweather", "Mulish", "Segoe UI", "Times New Roman", cursive
+
+.products
+  figure
+    background-color: rgba($color: #FFFFFF, $alpha: 0.5)
+    margin-right: 2%
+    max-width: 20%
+
+    @media (max-width: 560px)
+      max-width: 80%
+      margin-top: 0
+
+    a
+      z-index: 1
+      box-shadow: none
+      transition: box-shadow 1s ease-in-out
+
+      &:hover
+        box-shadow: inset 0 0 0 10px gray
+
+    img
+      z-index: 2
+      max-width: 100%
+      max-height: 200px
+      width: auto
+      height: auto
+
+      @media (max-width: 560px)
+        max-width: 100%
+        max-height: 300px
+        width: auto
+        height: auto
+
+  figcaption
+    margin-left: 3%
+    font-family: $font
+    font-size: 12pt
+    font-weight: bold
+
+    @media (min-width: 560px) and (max-width: 999px)
+      font-size: 10pt
+
+    span
+      color: darkred
+      font-weight: 900
+      font-size: 14pt
+      margin-right: 5%
+
+      @media (min-width: 560px) and (max-width: 999px)
+        font-size: 12pt
+
+    .old-price
+      color: rgba($color: darkred, $alpha: 0.5)
+      text-decoration-line: line-through
+      font-size: 12pt
+
+      @media (min-width: 560px) and (max-width: 999px)
+        font-size: 10pt
+
+.breadcrumps
+  margin-left: 3%
+
+  li
+    font-size: x-large
+    display: inline
+    list-style: none
+    background-image: url(arrow.svg)
+    background-repeat: no-repeat
+    background-position: 7% 55%
+    padding-left: 25px
+    margin: 0
+
+    a
+      text-decoration: none
+      color: #000000
+
+  margin-bottom: 0
