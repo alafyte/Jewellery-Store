@@ -15,11 +15,11 @@
   z-index: 1;
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-transition: -webkit-box-shadow 1s ease-in-out;
-  transition: -webkit-box-shadow 1s ease-in-out;
-  transition: box-shadow 1s ease-in-out;
-  -o-transition: box-shadow 1s ease-in-out;
-  transition: box-shadow 1s ease-in-out, -webkit-box-shadow 1s ease-in-out;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
 .products figure a:hover {
