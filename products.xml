@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products_list>
+    <rings>
+        <name>Кольцо с бриллиантом из серебра 925 пробы</name>
+        <item_number>3940100</item_number>
+        <metal>Серебро</metal>
+        <weight>1.83</weight>
+        <insert>None</insert>
+        <price>93</price>
+        <old_price>186</old_price>
+    </rings>
+    <rings>
+        <name>Кольцо с бриллиантами из золота 585 пробы</name>
+        <item_number>3940101</item_number>
+        <metal>Золото</metal>
+        <weight>2.53</weight>
+        <insert>Бриллиант</insert>
+        <price>825</price>
+        <old_price>1649</old_price>
+    </rings>
+    <rings>
+        <name>Кольцо с бриллиантами из белого золота</name>
+        <item_number>3940102</item_number>
+        <metal>Белое золото</metal>
+        <weight>1.94</weight>
+        <insert>Бриллиант</insert>
+        <price>2078</price>
+        <old_price>4157</old_price>
+    </rings>
+    <rings>
+        <name>Кольцо с фианитами из золота 585 пробы</name>
+        <item_number>3940103</item_number>
+        <metal>Золото</metal>
+        <weight>2.25</weight>
+        <insert>Фианит</insert>
+        <price>856</price>
+        <old_price>1713</old_price>
+    </rings>
+    <rings>
+        <name>Кольцо с фианитами из золота 585 пробы</name>
+        <item_number>3940104</item_number>
+        <metal>Золото</metal>
+        <weight>2.42</weight>
+        <insert>Фианит</insert>
+        <price>952</price>
+        <old_price>1923</old_price>
+    </rings>
+    <rings>
+        <name>Кольцо с кристаллом из серебра 925 пробы</name>
+        <item_number>3940105</item_number>
+        <metal>Серебро</metal>
+        <weight>1.65</weight>
+        <insert>Кристалл</insert>
+        <price>90</price>
+        <old_price>180</old_price>
+    </rings>
+    <rings>
+        <name>Кольцо с бриллиантами из золота 585 пробы</name>
+        <item_number>3940106</item_number>
+        <metal>Золото</metal>
+        <weight>2.74</weight>
+        <insert>Бриллиант</insert>
+        <price>5787</price>
+        <old_price>11574</old_price>
+    </rings>
+    <rings>
+        <name>Кольцо с фианитами из серебра 925 пробы</name>
+        <item_number>3940107</item_number>
+        <metal>Серебро</metal>
+        <weight>2.29</weight>
+        <insert>Фианит</insert>
+        <price>45</price>
+        <old_price>91</old_price>
+    </rings>
+    <earrings>
+        <name>Серьги из серебра 925 пробы</name>
+        <item_number>3940200</item_number>
+        <metal>Серебро</metal>
+        <weight>1.3</weight>
+        <insert>None</insert>
+        <price>31</price>
+        <old_price>62</old_price>
+    </earrings>
+    <earrings>
+        <name>Серьги с бриллиантами из золота 585 пробы</name>
+        <item_number>3940201</item_number>
+        <metal>Золото</metal>
+        <weight>1.55</weight>
+        <insert>Бриллиант</insert>
+        <price>2537</price>
+        <old_price>2074</old_price>
+    </earrings>
+    <earrings>
+        <name>Серьги с бриллиантами из золота 585 пробы</name>
+        <item_number>3940202</item_number>
+        <metal>Золото</metal>
+        <weight>1.9</weight>
+        <insert>Бриллиант</insert>
+        <price>2314</price>
+        <old_price>4623</old_price>
+    </earrings>
+    <earrings>
+        <name>Серьги из серебра 925 пробы</name>
+        <item_number>3940203</item_number>
+        <metal>Серебро</metal>
+        <weight>1.2</weight>
+        <insert>None</insert>
+        <price>140</price>
+        <old_price>281</old_price>
+    </earrings>
+    <earrings>
+        <name>Серьги с бриллиантами из золота 585 пробы</name>
+        <item_number>3940204</item_number>
+        <metal>Золото</metal>
+        <weight>1.7</weight>
+        <insert>Бриллиант</insert>
+        <price>1356</price>
+        <old_price>2729</old_price>
+    </earrings>
+    <earrings>
+        <name>Серьги с бриллиантами из золота 585 пробы</name>
+        <item_number>3940205</item_number>
+        <metal>Золото</metal>
+        <weight>2.1</weight>
+        <insert>Бриллиант, танзанит</insert>
+        <price>1934</price>
+        <old_price>3930</old_price>
+    </earrings>
+    <earrings>
+        <name>Серьги из золота 585 пробы</name>
+        <item_number>3940206</item_number>
+        <metal>Золото</metal>
+        <weight>1.4</weight>
+        <insert>None</insert>
+        <price>1597</price>
+        <old_price>3193</old_price>
+    </earrings>
+    <earrings>
+        <name>Серьги с бриллиантами из золота 585 пробы</name>
+        <item_number>3940207</item_number>
+        <metal>Золото</metal>
+        <weight>2.2</weight>
+        <insert>Бриллиант</insert>
+        <price>9 014</price>
+        <old_price>18 028</old_price>
+    </earrings>
+    <bracelets>
+        <name>Браслет с фианитами из золота 585 пробы</name>
+        <item_number>3940300</item_number>
+        <metal>Золото</metal>
+        <weight>11.5</weight>
+        <insert>Фианит</insert>
+        <price>2 916</price>
+        <old_price>5 832</old_price>
+    </bracelets>
+    <bracelets>
+        <name>Браслет с миксом камней из серебра 925 пробы</name>
+        <item_number>3940301</item_number>
+        <metal>Серебро</metal>
+        <weight>13.2</weight>
+        <insert>Фианит, аметист</insert>
+        <price>201</price>
+        <old_price>401</old_price>
+    </bracelets>
+    <bracelets>
+        <name>Браслет из серебра 925 пробы</name>
+        <item_number>3940302</item_number>
+        <metal>Серебро</metal>
+        <weight>13.2</weight>
+        <insert>Фианит, аметист</insert>
+        <price>201</price>
+        <old_price>401</old_price>
+    </bracelets>
+    <bracelets>
+        <name>Браслет с фианитами из серебра 925 пробы</name>
+        <item_number>3940303</item_number>
+        <metal>Серебро</metal>
+        <weight>10.8</weight>
+        <insert>Фианит</insert>
+        <price>275</price>
+        <old_price>550</old_price>
+    </bracelets>
+    <bracelets>
+        <name>Браслет с фианитами из серебра 925 пробы</name>
+        <item_number>3940304</item_number>
+        <metal>Серебро</metal>
+        <weight>12.1</weight>
+        <insert>Фианит</insert>
+        <price>297</price>
+        <old_price>594</old_price>
+    </bracelets>
+    <bracelets>
+        <name>Браслет с фианитами из серебра 925 пробы</name>
+        <item_number>3940305</item_number>
+        <metal>Серебро</metal>
+        <weight>11.9</weight>
+        <insert>Фианит</insert>
+        <price>329</price>
+        <old_price>659</old_price>
+    </bracelets>
+    <bracelets>
+        <name>Браслет с кристаллами из серебра 925 пробы</name>
+        <item_number>3940306</item_number>
+        <metal>Серебро</metal>
+        <weight>10.6</weight>
+        <insert>Кристаллы SWAROWSKI</insert>
+        <price>184</price>
+        <old_price>367</old_price>
+    </bracelets>
+    <bracelets>
+        <name>Браслет из кожи ската и золота 585 пробы</name>
+        <item_number>3940306</item_number>
+        <metal>Золото</metal>
+        <weight>13.4</weight>
+        <insert>Кожа ската</insert>
+        <price>3613</price>
+        <old_price>7225</old_price>
+    </bracelets>
+    <chaines>
+        <name>Цепь плетения "Тройной ромб" из золота 585 пробы</name>
+        <item_number>3940400</item_number>
+        <metal>Золото</metal>
+        <weight>8.9</weight>
+        <price>3328</price>
+        <old_price>6657</old_price>
+    </chaines>
+    <chaines>
+        <name>Цепь плетения "Змеиный ромб" из серебра 925 пробы</name>
+        <item_number>3940401</item_number>
+        <metal>Серебро</metal>
+        <weight>6.4</weight>
+        <price>56</price>
+        <old_price>112</old_price>
+    </chaines>
+    <chaines>
+        <name>Цепь плетения "Змеиный ромб" из белого золота 585 пробы</name>
+        <item_number>3940402</item_number>
+        <metal>Золото</metal>
+        <weight>6.8</weight>
+        <price>883</price>
+        <old_price>1776</old_price>
+    </chaines>
+    <chaines>
+        <name>Цепь панцирного плетения из желтого золота 585 пробы</name>
+        <item_number>3940403</item_number>
+        <metal>Золото</metal>
+        <weight>7.4</weight>
+        <price>460</price>
+        <old_price>920</old_price>
+    </chaines>
+    <chaines>
+        <name>Цепь плетения "Бисмарк" с алмазной гранью из серебра 925 пробы</name>
+        <item_number>3940404</item_number>
+        <metal>Серебро</metal>
+        <weight>5.3</weight>
+        <price>314</price>
+        <old_price>629</old_price>
+    </chaines>
+    <chaines>
+        <name>Цепь плетения "Тройной ромб" из золота 585 пробы</name>
+        <item_number>3940405</item_number>
+        <metal>Золото</metal>
+        <weight>6.4</weight>
+        <price>2096</price>
+        <old_price>5813</old_price>
+    </chaines>
+    <chaines>
+        <name>Цепь кордового плетения ("Корда") из золота 585 пробы</name>
+        <item_number>3940406</item_number>
+        <metal>Золото</metal>
+        <weight>6.8</weight>
+        <price>1669</price>
+        <old_price>3367</old_price>
+    </chaines>
+    <chaines>
+        <name>Цепь фантазийного плетения из золота 585 пробы</name>
+        <item_number>3940407</item_number>
+        <metal>Золото</metal>
+        <weight>7.3</weight>
+        <price>1864</price>
+        <old_price>3787</old_price>
+    </chaines>
+</products_list>
